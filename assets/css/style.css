@@ -33,3 +33,21 @@ body {
     text-transform: uppercase;
     padding: 25px;
 }
+
+/* Footer */
+
+.footer {
+    text-align: right;
+    background-color: #000000;
+    padding: 10px;
+}
+
+.footer ul li {
+    display: inline;
+    font-size: 200%;
+    padding: 0 5px;
+}
+
+.footer ul li i {
+    color: #ffffff;
+}
