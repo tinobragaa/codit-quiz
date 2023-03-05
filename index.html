@@ -21,19 +21,19 @@
             <h2>Your JavaScript quiz</h2>
         </div>
     </header>
-    <section>
-        <div>
-            <h1>Welcome to the JavaScript Test!</h1>
+    <section class="game-area">
+        <div class="beginning-header">
+            <h1>Welcome to the <span id="colored-js">JavaScript</span> Test!</h1>
         </div>
-        <div>
+        <div class="beginning-text">
             <p>Are you ready to try out your knowledge in the JavaScript language?</p>
             <p>First things first, what's your name, Developer?</p>
         </div>
-        <div>
+        <div class="beginning-inp">
             <form>
-                <label></label>
-                <input>
-                <div>
+                <label for="player-name"></label>
+                <input type="text" id="player-name" placeholder="Your Name Here" maxlength="10" required>
+                <div class="sub-btn">
                     <button>Submit</button>
                 </div>
             </form>
