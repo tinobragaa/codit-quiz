@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@500&family=Press+Start+2P&display=swap');
+
+/* Structural settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    color: #000000;
+    font-family: 'Overpass Mono', monospace;
+}
