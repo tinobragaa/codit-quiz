@@ -39,15 +39,22 @@ body {
 .footer {
     text-align: right;
     background-color: #000000;
-    padding: 10px;
 }
 
 .footer ul li {
     display: inline;
     font-size: 200%;
-    padding: 0 5px;
 }
 
 .footer ul li i {
     color: #ffffff;
+    padding: 20px 5px;
+    position: relative;
+    right: 40px;
+}
+
+/* Links Hover Effect */
+
+.footer ul li i:hover {
+    text-shadow: 0 0 3px #ffffff;;
 }
