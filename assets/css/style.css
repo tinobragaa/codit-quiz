@@ -9,7 +9,8 @@
 }
 
 body {
-    color: #000000;
+    color: #1E1E1E;
+    background-color: #F8F8F8;
     font-family: 'Overpass Mono', monospace;
 }
 
@@ -21,14 +22,15 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 90%;
     text-align: center;
+    background-color: #ffffff;
     padding: 25px;
     margin: auto;
-    border-bottom: 5px solid #000000;
-    box-shadow: 0 0 5px #000000;
+    border-bottom: 5px solid #1E1E1E;
+    box-shadow: 0 0 5px #1E1E1E;
 }
 
-.main-text {
-    font-size: 2vw;
+.top-text {
+    font-size: 3vw;
     text-align: center;
     letter-spacing: 18px;
     text-transform: uppercase;
@@ -39,8 +41,9 @@ body {
 
 .footer {
     text-align: right;
-    background-color: #000000;
-    box-shadow: 0 0 5px #000000;
+    background-color: #1E1E1E;
+    border-top: 5px solid #ffffff;
+    box-shadow: 0 0 5px #1E1E1E;
 }
 
 .footer ul li {
