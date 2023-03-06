@@ -12,6 +12,13 @@ body {
     font-family: 'Overpass Mono', monospace;
     color: #1E1E1E;
     background-color: #F8F8F8;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: .4fr 1fr;
+}
+
+.hide {
+    display: none;
 }
 
 /* Home page */
@@ -41,14 +48,14 @@ body {
 
 .game-area {
     background-color: #ffffff;
-    width: 85%;
-    height: 58.2vh;
+    max-width: 85%;
+    height: 560px;
     max-width: 1000px;
-    padding: 1%;
     margin: 0 auto;
     border: 3px double #1E1E1E;
     box-shadow: 0 0 5px #1E1E1E;
 }
+
 
 .beginning-header {
     font-size: 1.5rem;
@@ -57,7 +64,9 @@ body {
     padding-top: 68px;
 }
 
-.colored-js:hover {
+/* "JavaScript" Heading Hover Effect */
+
+#colored-js:hover {
     color: #F9DD3C;
 }
 
@@ -114,6 +123,20 @@ body {
 .sub-btn button:hover {
     background-color: #F9DD3C;
 }
+
+/* Rules Area */
+
+.rules-area {
+    background-color: #ffffff;
+    max-width: 85%;
+    height: 560px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 3px double #1E1E1E;
+    box-shadow: 0 0 5px #1E1E1E;
+}
+
+
 
 /* Footer */
 
