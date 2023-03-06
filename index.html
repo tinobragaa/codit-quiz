@@ -21,7 +21,7 @@
             <h2>Your JavaScript quiz</h2>
         </div>
     </header>
-    <section class="game-area hide">
+    <section class="game-area">
         <div class="beginning-header">
             <h2>Welcome to the <span id="colored-js">JavaScript</span> Test!</h2>
         </div>
@@ -32,19 +32,19 @@
         <div class="beginning-inp">
             <form>
                 <label for="player-name"></label>
-                <input type="text" id="player-name" placeholder="Your Name Here" maxlength="10" required>
+                <input type="text" id="player-name" class="color-entered-text" placeholder="Your Name Here" maxlength="10" required>
                 <div class="sub-btn">
                     <button>Submit</button>
                 </div>
             </form>
         </div>
     </section>
-    <section class="rules-area">
+    <section class="rules-area hide">
         <div class="beginning-header"> 
             <h2>Quiz Rules</h2>
         </div>
         <div class="beginning-text">
-            <p>So, ${user-name}, the rules are pretty simple. This test contains 10 questions and you'll have 30 seconds to answer between a, b, c and d. In the end you will see how many you got it right.</p>
+            <p>So, ${user-name}, the rules are pretty simple. This test contains 10 questions and you'll have 45 seconds to answer between a, b, c and d. In the end you will see how many you got it right.</p>
             <p>Ready, set, go!</p>
         </div>
         <div class="sub-btn beginning-inp">
@@ -52,8 +52,20 @@
         </div>
     </section>
     <section>
+        <div id="timer">
+            45s
+        </div>
         <div>
-            <!-- Quiz Section -->
+            <h2 class="question-text" id="question">Oops... something went wrong. D: Reload the page, please.</h2>
+        </div>
+        <div class="answer-buttons">
+            <button aria-label="Answer A" id="answer-a" class="answer-buttons buttons-hover" value="A">Answer 1</button>
+            <button aria-label="Answer B" id="answer-b" class="answer-buttons buttons-hover" value="B">Answer 2</button>
+            <button aria-label="Answer C" id="answer-c" class="answer-buttons buttons-hover" value="C">Answer 3</button>
+            <button aria-label="Answer D" id="answer-d" class="answer-buttons buttons-hover" value="D">Answer 4</button>
+        </div>
+        <div class="next-question">
+            <button aria-label="Next Question" id="next-question"></button>
         </div>
     </section>
     <section>

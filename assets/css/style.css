@@ -101,7 +101,11 @@ body {
 
 .beginning-inp input[type=text]:focus {
     outline: 3px solid #F9DD3C;
-  }
+}
+
+.color-entered-text:active {
+    background-color: #1E1E1E;
+}
 
 .sub-btn {
     padding-top: 50px;
@@ -144,7 +148,7 @@ body {
     text-align: right;
     background-color: #1E1E1E;
     border-top: 5px solid #ffffff;
-    box-shadow: 0 0 5px #1E1E1E;
+    box-shadow: 0 0 5px #ffffff;
 }
 
 .footer ul li {
