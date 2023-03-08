@@ -17,67 +17,93 @@
         <div class="top-bar">
             <h1>&lt;codit/&gt;</h1>
         </div>
+    </header>
+    <section class="main-container hide">
         <div class="top-text">
             <h2>Your JavaScript quiz</h2>
         </div>
-    </header>
-    <section class="game-area">
-        <div class="beginning-header">
-            <h2>Welcome to the <span id="colored-js">JavaScript</span> Test!</h2>
+        <div class="game-area">
+            <div class="beginning-header">
+                <h2>Welcome to the <span id="colored-js">JavaScript</span> Test!</h2>
+            </div>
+            <div class="beginning-text">
+                <p>Are you ready to try out your knowledge in the JavaScript language?</p>
+                <p>First things first, what's your name, Developer?</p>
+            </div>
+            <div class="beginning-inp">
+                <form>
+                    <label for="player-name"></label>
+                    <input type="text" id="player-name" class="color-entered-text" placeholder="Your Name Here" maxlength="10" required>
+                    <div class="sub-btn">
+                        <button aria-label="Submit your answer.">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="beginning-text">
-            <p>Are you ready to try out your knowledge in the JavaScript language?</p>
-            <p>First things first, what's your name, Developer?</p>
+    </section>
+    <section class="main-container hide">
+        <div class="top-text">
+            <h2>Your JavaScript quiz</h2>
         </div>
-        <div class="beginning-inp">
-            <form>
-                <label for="player-name"></label>
-                <input type="text" id="player-name" class="color-entered-text" placeholder="Your Name Here" maxlength="10" required>
-                <div class="sub-btn">
-                    <button>Submit</button>
+        <div class="rules-area">
+            <div class="beginning-header"> 
+                <h2>Quiz Rules</h2>
+            </div>
+            <div class="beginning-text">
+                <p>So, ${user-name}, the rules are pretty simple. This test contains 10 questions and you'll have 45 seconds to answer between a, b, c and d. In the end you will see how many you got it right.</p>
+                <p>Ready, set, go!</p>
+            </div>
+            <div class="sub-btn beginning-inp">
+                <button aria-label="Start the quiz.">Start Quiz</button>
+            </div>
+        </div>
+    </section>
+    <section class="main-container hide">
+        <div class="top-text">
+            <h2>Your JavaScript quiz</h2>
+        </div>
+        <div class="questions-area">
+            <div id="timer">
+                <span class="timer-style">45</span>
+            </div>
+            <div class="question-header"> 
+                <h2>Question 1</h2>
+            </div>
+            <div class="beginning-text">
+                <p class="question-text" id="question">Oops... something went wrong. D: Reload the page, please.</p>
+            </div>
+            <div class="buttons-container">
+                <div class="questions-left">
+                    <button aria-label="Answer A" id="answer-a" value="A">Answer 1</button>
+                    <button aria-label="Answer B" id="answer-b" value="B">Answer 2</button>
                 </div>
-            </form>
-        </div>
-    </section>
-    <section class="rules-area hide">
-        <div class="beginning-header"> 
-            <h2>Quiz Rules</h2>
-        </div>
-        <div class="beginning-text">
-            <p>So, ${user-name}, the rules are pretty simple. This test contains 10 questions and you'll have 45 seconds to answer between a, b, c and d. In the end you will see how many you got it right.</p>
-            <p>Ready, set, go!</p>
-        </div>
-        <div class="sub-btn beginning-inp">
-            <button>Start Quiz</button>
-        </div>
-    </section>
-    <section class="questions-area hide">
-        <div id="timer">
-            <span class="timer-style">45</span>
-        </div>
-        <div class="question-header"> 
-            <h2>Question 1</h2>
-        </div>
-        <div class="beginning-text">
-            <p class="question-text" id="question">Oops... something went wrong. D: Reload the page, please.</p>
-        </div>
-        <div class="buttons-container">
-            <div class="questions-left">
-                <button aria-label="Answer A" id="answer-a" class="answer-buttons buttons-hover" value="A">Answer 1</button>
-                <button aria-label="Answer B" id="answer-b" class="answer-buttons buttons-hover" value="B">Answer 2</button>
+                <div class="questions-right">
+                    <button aria-label="Answer C" id="answer-c" value="C">Answer 3</button>
+                    <button aria-label="Answer D" id="answer-d" value="D">Answer 4</button>
+                </div>
             </div>
-            <div class="questions-right">
-                <button aria-label="Answer C" id="answer-c" class="answer-buttons buttons-hover" value="C">Answer 3</button>
-                <button aria-label="Answer D" id="answer-d" class="answer-buttons buttons-hover" value="D">Answer 4</button>
+            <div class="next-btn">
+                <button aria-label="Next Question.">Next</button>
             </div>
         </div>
-        <div class="next-btn">
-            <button aria-label="Next Question" id="next-question">Next</button>
-        </div>
     </section>
-    <section>
-        <div>
-            <!-- Score Section -->
+    <section class="main-container">
+        <div class="top-text">
+            <h2>Your JavaScript quiz</h2>
+        </div>
+        <div class="score-area">
+            <div class="beginning-header">
+                <h2>Yaaay! Good job, ${user-name}, you did it!</h2>
+            </div>
+            <div class="beginning-text">
+                <p>You score is... x/10!</p>
+                <p>In the end of the day, what really matters is that you tried and persisted, just because of that you're already a winner. Keep up with the good work!</p>
+            </div>
+            <div class="beginning-inp">
+                <div class="start-again-btn">
+                    <button aria-label="Start the quiz again.">Start again</button>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Footer -->
