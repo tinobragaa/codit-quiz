@@ -184,3 +184,24 @@ startGame = () => {
     console.log(availableQuestion);
     getNewQuestion();
 };
+
+// Randomly Get A New Question
+
+getNewQuestion = () => {
+    if (availableQuestion === 0 || questionCounter >= max_questions) {
+        
+    }
+    questionCounter++;
+    const questionIndex = Math.floor(Math.random() * availableQuestion.length);
+    currentQuestion = availableQuestion[questionIndex];
+    question.innerText = currentQuestion.question;
+
+    choices.forEach( choice => {
+        const number = choice.dataset["number"];
+        choice.innerText = currentQuestion["answer" + number];
+    });
+
+    availableQuestion.splice(questionIndex, 1);
+
+    acceptingAnswers = true;
+};
