@@ -14,12 +14,6 @@ body {
     background-color: #ffffff;
 }
 
-.hide {
-    display: none;
-}
-
-/* Home page */
-
 /* Top bar and logo */
 
 .top-bar {
@@ -40,7 +34,7 @@ body {
     margin: 40px 0 30px;
 }
 
-/* Start Section */
+/* Start Interface */
 
 .start-area {
     background-color: #ffffff;
@@ -60,7 +54,6 @@ body {
 }
 
 /* "JavaScript" Heading Hover Effect */
-
 #colored-js:hover {
     color: #F9DD3C;
 }
@@ -115,12 +108,11 @@ input[type=text]:focus {
 }
 
 /* Submit Button Hover Effect */
-
 .submit-btn button:hover {
     background-color: #F9DD3C;
 }
 
-/* Rules Area */
+/* Rules Interface */
 
 .rules-area {
     background-color: #ffffff;
@@ -132,7 +124,7 @@ input[type=text]:focus {
     box-shadow: 0 0 5px #1E1E1E;
 }
 
-/* Questions Area */
+/* Questions Interface */
 
 .questions-area {
     background-color: #ffffff;
@@ -162,7 +154,6 @@ input[type=text]:focus {
 }
 
 /* Question Button Hover Effect */
-
 .buttons-container button:hover {
     background-color: #F9DD3C;
 }
@@ -199,12 +190,11 @@ input[type=text]:focus {
 }
 
 /* Next Button Hover Effect */
-
 .next-btn button:hover {
     background-color: #F9DD3C;
 }
 
-/* Score Area */
+/* Score Interface */
 
 .score-area {
     background-color: #ffffff;
@@ -229,9 +219,22 @@ input[type=text]:focus {
 }
 
 /* Start Again Hover Effect */
-
 .start-again-btn button:hover {
     background-color: #F9DD3C;
+}
+
+/* JavaScript Classes */
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: #9ee461 !important;
+}
+
+.incorrect {
+    background-color: #F9573C !important;
 }
 
 /* Footer */
@@ -259,7 +262,6 @@ input[type=text]:focus {
 }
 
 /* Links Hover Effect */
-
 .footer ul li i:hover {
     text-shadow: 0 0 3px #ffffff;;
 }
