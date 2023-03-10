@@ -37,12 +37,12 @@ body {
     letter-spacing: 18px;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 5px 40px 5px;
+    margin: 40px 0 30px;
 }
 
-/* Game Container */
+/* Start Section */
 
-.game-area {
+.start-area {
     background-color: #ffffff;
     max-width: 85%;
     height: 560px;
@@ -52,8 +52,7 @@ body {
     box-shadow: 0 0 5px #1E1E1E;
 }
 
-
-.beginning-header {
+.section-header {
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-align: center;
@@ -66,23 +65,22 @@ body {
     color: #F9DD3C;
 }
 
-.beginning-text {
+.section-text {
     font-size: 1.5rem;
     letter-spacing: 1px;
     text-align: center;
     padding: 0 60px 0;
 }
 
-.beginning-text p {
+.section-text p {
     padding-top: 50px;
 }
 
-.beginning-inp {
+.buttons-alignment {
     text-align: center;
-    padding-top: 50px;
 }
 
-.beginning-inp input {
+input {
     font-family: 'Overpass Mono', monospace;
     color: #ffffff;
     font-size: 1.2rem;
@@ -92,18 +90,19 @@ body {
     height: 3.2vh;
     min-width: 180px;
     border-radius: 50px;
+    margin-top: 50px;
     padding-top: 5px;
 }
 
-.beginning-inp input[type=text]:focus {
+input[type=text]:focus {
     outline: 3px solid #F9DD3C;
 }
 
-.sub-btn {
+.submit-btn {
     padding-top: 50px;
 }
 
-.sub-btn button {
+.submit-btn button {
     font-family: 'Overpass Mono', monospace;
     text-transform: lowercase;
     font-size: 1rem;
@@ -117,7 +116,7 @@ body {
 
 /* Submit Button Hover Effect */
 
-.sub-btn button:hover {
+.submit-btn button:hover {
     background-color: #F9DD3C;
 }
 
@@ -145,26 +144,6 @@ body {
     box-shadow: 0 0 5px #1E1E1E;
 }
 
-.question-header {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-#timer {
-    text-align: left;
-    margin: 23px 0 0 15px;
-}
-
-.timer-style {
-    font-size: 250%;
-    color: #ffffff;
-    background-color: #1E1E1E;
-    border-radius: 15px;
-    padding: 10px 14px 0 10px;
-    left: 47%;
-}
-
 .buttons-container {
     display: flex;
     margin-top: 15px;
@@ -174,6 +153,10 @@ body {
     font-family: 'Overpass Mono', monospace;
     font-size: 1.2rem;
     background-color: #ffffff;
+    border-radius: 25px;
+    width: 52%;
+    height: 80px;
+    margin: 20px 5px 0 20px;
     border: 2px solid #1E1E1E;
     box-shadow: 0 0 2px #1E1E1E;
 }
@@ -184,25 +167,11 @@ body {
     background-color: #F9DD3C;
 }
 
-.questions-left button {
-    border-radius: 25px;
-    width: 260px;
-    height: 80px;
-    margin: 20px 20px 0 5px;
-}
-
 .questions-left {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-.questions-right button {
-    border-radius: 25px;
-    width: 260px;
-    height: 80px;
-    margin: 20px 5px 0 20px;
 }
 
 .questions-right {
