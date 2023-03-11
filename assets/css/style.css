@@ -26,6 +26,11 @@ body {
     box-shadow: 0 0 5px #1E1E1E;
 }
 
+.top-bar a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
 .top-text {
     font-size: 3vw;
     letter-spacing: 18px;
