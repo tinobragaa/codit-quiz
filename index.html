@@ -15,14 +15,14 @@
     <!-- Header -->
     <header>
         <div class="top-bar">
-            <h1>&lt;codit/&gt;</h1>
+            <h1>&lt;codit&gt;</h1>
         </div>
         <div class="top-text">
             <h2>Your JavaScript quiz</h2>
         </div>
     </header>
     <!-- Start Interface -->
-    <section class="start-area hide">
+    <section class="start-area" id="start-area">
         <div class="section-header">
             <h2>Welcome to the <span id="colored-js">JavaScript</span> Test!</h2>
         </div>
@@ -32,14 +32,14 @@
         </div>
         <div class="buttons-alignment">
             <label for="user-name"></label>
-            <input type="text" id="user-name" name="user-name" class="color-entered-text" placeholder="Your Name Here" minlength="2" maxlength="12" required>
+            <input type="text" id="user-name" name="user-name" onclick="getInputValue();" class="color-entered-text form-input" placeholder="Your Name Here" minlength="2" maxlength="12" required>
             <div class="submit-btn">
                 <button aria-label="Submit your answer." id="user-submit">Submit</button>
             </div>
         </div>
     </section>
     <!-- Rules Interface -->
-    <section class="rules-area hide">
+    <section class="rules-area hide" id="rules-area">
         <div class="section-header"> 
             <h2>Quiz Rules</h2>
         </div>
@@ -48,11 +48,11 @@
             <p>Ready, set, go!</p>
         </div>
         <div class="submit-btn buttons-alignment">
-            <button aria-label="Start the quiz.">Start Quiz</button>
+            <button aria-label="Start the quiz." id="start-quiz-btn">Start Quiz</button>
         </div>
     </section>
     <!-- Questions Interface -->
-    <section class="questions-area ">
+    <section class="questions-area hide" id="questions-area">
         <div class="section-header"> 
             <h2>Question 1</h2>
         </div>
@@ -74,7 +74,7 @@
         </div>
     </section>
     <!-- Score Interface -->
-    <section class="score-area hide">
+    <section class="score-area hide" id="score-area">
         <div class="section-header">
             <h2>Yaaay! Good job, ${user-name}, you did it!</h2>
         </div>

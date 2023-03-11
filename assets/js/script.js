@@ -1,4 +1,11 @@
 // Variables
+const startArea = document.getElementById("start-area");
+const rulesArea = document.getElementById("rules-area");
+const questionsArea = document.getElementById("questions-area");
+const scoreArea = document.getElementById("score-area");
+
+const submitButton = document.getElementById("user-submit");
+const startQuiz = document.getElementById("start-quiz-btn");
 
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("answers-text"));
