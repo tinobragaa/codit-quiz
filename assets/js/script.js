@@ -16,6 +16,12 @@ let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestion = [];
+// Get User Name
+
+function getInputValue(){
+  var userName = document.getElementById("user-name").value;
+  console.log(userName);
+}
 
 // Start Game Function
 
