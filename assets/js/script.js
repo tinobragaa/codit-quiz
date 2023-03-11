@@ -16,12 +16,21 @@ let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestion = [];
+
 // Get User Name
 
 function getInputValue(){
   var userName = document.getElementById("user-name").value;
   console.log(userName);
 }
+
+// Open Rules Interface
+
+submitButton.addEventListener("click", () => {
+  startArea.classList.add("hide");
+  rulesArea.classList.remove("hide");
+}
+);
 
 // Start Game Function
 
