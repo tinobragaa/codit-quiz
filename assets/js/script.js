@@ -106,7 +106,7 @@ choices.forEach(choice => {
       setTimeout(() => {
         selectedChoice.classList.remove(classToApply);
         getNewQuestion();
-      }, 1);
+      }, 1000);
     });
   });
 
