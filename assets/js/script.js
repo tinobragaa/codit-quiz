@@ -7,6 +7,7 @@ const scoreArea = document.getElementById("score-area");
 const submitButton = document.getElementById("user-submit");
 const formInput = document.querySelector(".form-input");
 const startQuiz = document.getElementById("start-quiz-btn");
+const restartButton = document.getElementById("restart-btn");
 
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("answers-text"));
@@ -47,7 +48,7 @@ function buttonState() {
 
 // Rules Interface
 
-// Start Button to Load Quiz Interface
+// Start Quiz Button to Load Quiz Interface
 startQuiz.addEventListener("click", () => {
   rulesArea.classList.add("hide");
   questionsArea.classList.remove("hide");
@@ -110,3 +111,11 @@ choices.forEach(choice => {
   });
 
 startGame();
+
+// Score Interface
+
+// Start Again Button to Restart The Quiz
+restartButton.addEventListener("click", () => {
+  window.location.reload();
+}
+);
