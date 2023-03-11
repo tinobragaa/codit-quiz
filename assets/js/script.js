@@ -18,14 +18,13 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestion = [];
 
-// Get User Name
+// Start Area Interface
 
+// Get User Name
 function getInputValue(){
   var userName = document.getElementById("user-name").value;
   console.log(userName);
 }
-
-// Open Rules Interface
 
 // Submit Button to Load Rules Interface
 submitButton.addEventListener("click", () => {
@@ -35,8 +34,8 @@ submitButton.addEventListener("click", () => {
 );
 
 submitButton.disabled = true; 
-
 formInput.addEventListener("keyup", buttonState);
+
 // Disable the buttons until the the user fill the input field
 function buttonState() {
     if (document.querySelector(".form-input").value === "") {
@@ -46,8 +45,25 @@ function buttonState() {
     }
 }
 
-// Randomly Get A New Question
+// Rules Interface
 
+// Start Button to Load Quiz Interface
+startQuiz.addEventListener("click", () => {
+  rulesArea.classList.add("hide");
+  questionsArea.classList.remove("hide");
+}
+);
+
+// Start Game Function
+startGame = () => {
+  questionCounter = 0;
+  score = 0;
+  availableQuestion = [ ... questions];
+  console.log(availableQuestion);
+  getNewQuestion();
+};
+
+// Randomly Get A New Question
 getNewQuestion = () => {
     if (availableQuestion === 0 || questionCounter >= max_questions) {
         console.log(10);
@@ -68,7 +84,6 @@ getNewQuestion = () => {
 };
 
 // Move To Next Question When Clicked
-
 choices.forEach(choice => {
     choice.addEventListener("click", e => {
       if (!acceptingAnswers) return;
