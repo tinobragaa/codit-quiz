@@ -66,7 +66,8 @@ startGame = () => {
 // Randomly Get A New Question
 getNewQuestion = () => {
     if (availableQuestion === 0 || questionCounter >= max_questions) {
-        console.log(10);
+      questionsArea.classList.add("hide");
+      scoreArea.classList.remove("hide");
     }
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestion.length);
@@ -104,7 +105,7 @@ choices.forEach(choice => {
       setTimeout(() => {
         selectedChoice.classList.remove(classToApply);
         getNewQuestion();
-      }, 1000);
+      }, 1);
     });
   });
 
