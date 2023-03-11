@@ -5,6 +5,7 @@ const questionsArea = document.getElementById("questions-area");
 const scoreArea = document.getElementById("score-area");
 
 const submitButton = document.getElementById("user-submit");
+const formInput = document.querySelector(".form-input");
 const startQuiz = document.getElementById("start-quiz-btn");
 
 const question = document.getElementById("question");
@@ -26,20 +27,24 @@ function getInputValue(){
 
 // Open Rules Interface
 
+// Submit Button to Load Rules Interface
 submitButton.addEventListener("click", () => {
   startArea.classList.add("hide");
   rulesArea.classList.remove("hide");
 }
 );
 
-// Start Game Function
+submitButton.disabled = true; 
 
-startGame = () => {
-    questionCounter = 0;
-    score = 0;
-    availableQuestion = [ ... questions];
-    getNewQuestion();
-};
+formInput.addEventListener("keyup", buttonState);
+// Disable the buttons until the the user fill the input field
+function buttonState() {
+    if (document.querySelector(".form-input").value === "") {
+        submitButton.disabled = true;
+    } else {
+        submitButton.disabled = false;
+    }
+}
 
 // Randomly Get A New Question
 
