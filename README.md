@@ -186,3 +186,32 @@ The following frameworks and tools were used to develop the website:
 - Adobe Photoshop 2023
 - Techsini Mockup Generator
 - W3C Markup Validation Service
+
+# Testing
+
+### HTML Validation
+
+The Nu HTML Checker (W3C) is used to validate HTML documents. The page passed without any errors.
+
+### CSS Validation
+
+The W3C Jigsaw CSS Validation Service is used to validate CSS documents. The page passed without any errors.
+
+### JS Validation
+
+The JSHint is used to validate JavaScript documents. The page passed without any errors.
+
+### Accessibility
+
+The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webpages met accessibility standards. All 5 pages passed without any errors.
+
+Responsive test on multiple devices
+The following devices were used to ensure the site was responsive:
+
+- Ipad Pro
+- Galaxy S20
+- Macbook Pro
+- Iphone 13 Pro
+- Iphone 14 Pro Max
+- Notebook Acer Predator Helios 300
+
