@@ -256,3 +256,12 @@ A list of references used for the site:
 * [Behance](https://www.behance.net/)
 - Love Maths project
 
+# Acknowledgements
+
+I would like to take this opportunity to acknowledge and thank the following people:
+
+- My actual manager, Saoirse, for letting me study.
+- A big thank you for everybody on Code Institute's Slack Channels.
+- Jason, tutor from Code Institue. Thank you for the help.
+- My sister, Dana Braga, who's always willing to help.
+- My loved husband, Adson Aquino, who's always by my side.
