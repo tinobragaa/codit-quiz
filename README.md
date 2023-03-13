@@ -162,5 +162,27 @@ To keep the user interface as easy and smooth as possible I choose 4 game areas 
 - Score Area: The fourth interface gives users their score and the possibility to restart the quiz.
 - Error 404 Page: The Error page is created for broken links with a button to return to the game. 
 
-
 # Features
+
+# Technologies Used
+
+### Languages
+The following languages were used to develop the website:
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks and Tools
+The following frameworks and tools were used to develop the website:
+- Git
+- Github
+- Gitpod
+- Favicon
+- Devtool
+- Balsamiq
+- Google Fonts
+- Font Awesome
+- JSHint Validation
+- Adobe Photoshop 2023
+- Techsini Mockup Generator
+- W3C Markup Validation Service
