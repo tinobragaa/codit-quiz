@@ -245,3 +245,14 @@ To contribute or check the code yourself, you can fork or clone the repository a
 
 [Click Here To See The Live Website](https://tinobragaa.github.io/codit-quiz/)
 
+# Credits
+
+A list of references used for the site:
+
+### Coding References and Tutorials
+
+* [Favicon](https://favicon.io/)
+* [Codepen](https://codepen.io/trending)
+* [Behance](https://www.behance.net/)
+- Love Maths project
+
