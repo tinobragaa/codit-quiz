@@ -1,8 +1,8 @@
-# \<codit\ Quiz>
+# \<codit\> Quiz
 (Developer: Valentino Braga)
 
 
-\<codit\> Your JavaScript Quiz is a simple quiz designed for newbies in software development. The game has 10 questions for each new entry and by the end, you can see how many questions you got right. This project's goal is to help new developers not only to test their knowledge but also to learn more about JS in a fun and interactive way.
+\<codit\> Your JavaScript Quiz, is a simple quiz designed for newbies in software development. The game has 10 questions for each new entry and by the end, you can see how many questions you got right. This project's goal is to help new developers not only to test their knowledge but also to learn more about JS in a fun and interactive way.
 
 ![Mockup image]()
 
@@ -150,6 +150,8 @@ Overpass Mono and Press Start 2P fonts were chosen from Google Fonts. Fonts were
 
 The colour chosen were: white (#ffffff), JS yellow (#F9DD3C) and github grey-black (#1E1E1E). The colours were tested on Webaim using their contrast checker and the ratio was higher than 12.25:1 meaning that they are a great fit. 
 
+The yellow color is inspired in the JavaScript main color logo and the grey-black is inspired in the background color of the github dark mode.
+
 ![Colour Palette](docs/colour-pallete.jpg)
 
 ## Structure 
@@ -254,7 +256,7 @@ A list of references used for the site:
 * [Favicon](https://favicon.io/)
 * [Codepen](https://codepen.io/trending)
 * [Behance](https://www.behance.net/)
-- Love Maths project
+- Love Maths Project
 
 # Acknowledgements
 
