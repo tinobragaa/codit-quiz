@@ -193,11 +193,15 @@ The following frameworks and tools were used to develop the website:
 
 ### HTML Validation
 
-The Nu HTML Checker (W3C) is used to validate HTML documents. The page passed without any errors.
+The Nu HTML Checker (W3C) is used to validate HTML documents. The page passed without any errors, the only warning it shows is an empty heading. This heading will be filled with JavaScript through the quiz.
+
+![HTML Validation](docs/html-validation.jpg)
 
 ### CSS Validation
 
 The W3C Jigsaw CSS Validation Service is used to validate CSS documents. The page passed without any errors.
+
+![CSS Validation](docs/css-validation.jpg)
 
 ### JS Validation
 
