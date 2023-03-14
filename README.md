@@ -251,11 +251,14 @@ To contribute or check the code yourself, you can fork or clone the repository a
 
 A list of references used for the site:
 
-### Coding References and Tutorials
+### References and Tutorials
 
 * [Favicon](https://favicon.io/)
 * [Codepen](https://codepen.io/trending)
-* [Behance](https://www.behance.net/)
+* [Quiz Questions](https://codescracker.com/index.htm)
+* [Enable/Disable Button Tutorial](https://stackdiary.com/enable-disable-button-javascript/)
+* [Quiz Tutorial](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
+* [Behance/Cobyte](https://www.behance.net/gallery/129975245/Cobyte-brand-identity?tracking_source=search_projects%7Ccoding+design)
 - Love Maths Project
 
 # Acknowledgements

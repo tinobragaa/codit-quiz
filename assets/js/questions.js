@@ -1,4 +1,5 @@
-// All questions for the quiz are stored below
+// Question were taken from: https://codescracker.com/exam/sublist.php.
+// All questions for the quiz are stored below.
 
 const questions = [
     {

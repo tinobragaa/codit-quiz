@@ -1,111 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An online quiz game made to test your JavaScript knowledge.">
-    <meta name="keywords" content="quiz, game, javascript, online">
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>codit quiz</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="top-bar">
-            <h1><a href="index.html">&lt;codit&gt;</a></h1>
-        </div>
-        <div class="top-text">
-            <h2>Your JavaScript quiz</h2>
-        </div>
-    </header>
-    <!-- Start Interface -->
-    <section class="start-area" id="start-area">
-        <div class="section-header">
-            <h2>Welcome to the <span id="colored-js">JavaScript</span> Test!</h2>
-        </div>
-        <div class="section-text">
-            <p>Are you ready to try out your knowledge in the JavaScript language?</p>
-            <p>First things first, what's your name, Developer?</p>
-        </div>
-        <div class="buttons-alignment">
-            <label for="user-name"></label>
-            <input type="text" id="user-name" name="user-name" onclick="getInputValue();" class="color-entered-text form-input" placeholder="Your Name Here" minlength="2" maxlength="12" required>
-            <div class="submit-btn">
-                <button aria-label="Submit your answer." id="user-submit">Submit</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An online quiz game made to test your JavaScript knowledge.">
+        <meta name="keywords" content="quiz, game, javascript, online">
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>codit quiz</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="top-bar">
+                <h1><a href="index.html">&lt;codit&gt;</a></h1>
             </div>
-        </div>
-    </section>
-    <!-- Rules Interface -->
-    <section class="rules-area hide" id="rules-area">
-        <div class="section-header"> 
-            <h2>Quiz Rules</h2>
-        </div>
-        <div class="section-text">
-            <p>So, ${user-name}, the rules are pretty simple. This test contains 10 questions and you'll have to answer between a, b, c and d. In the end you will see how many you got it right.</p>
-            <p>Ready, set, go!</p>
-        </div>
-        <div class="submit-btn buttons-alignment">
-            <button aria-label="Start the quiz." id="start-quiz-btn">Start Quiz</button>
-        </div>
-    </section>
-    <!-- Questions Interface -->
-    <section class="questions-area hide" id="questions-area">
-        <div class="section-header"> 
-            <h2>Question 1</h2>
-        </div>
-        <div class="section-text">
-            <p class="question-text" id="question"></p>
-        </div>
-        <div class="buttons-container">
-            <div class="questions-left">
-                <button aria-label="Answer A" class="answers-text" data-number="1">Answer 1</button>
-                <button aria-label="Answer B" class="answers-text" data-number="2">Answer 2</button>
+            <div class="top-text">
+                <h2>Your JavaScript quiz</h2>
             </div>
-            <div class="questions-right">
-                <button aria-label="Answer C" class="answers-text" data-number="3">Answer 3</button>
-                <button aria-label="Answer D" class="answers-text" data-number="4">Answer 4</button>
+        </header>
+        <!-- Start Interface -->
+        <section class="start-area" id="start-area">
+            <div class="section-header">
+                <h2>Welcome to the <span id="colored-js">JavaScript</span> Test!</h2>
             </div>
-        </div>
-        <div class="next-btn buttons-alignment">
-            <button aria-label="Next question.">Next</button>
-        </div>
-    </section>
-    <!-- Score Interface -->
-    <section class="score-area hide" id="score-area">
-        <div class="section-header">
-            <h2>Yaaay! Good job, ${user-name}, you did it!</h2>
-        </div>
-        <div class="section-text">
-            <p>You score is... x/10!</p>
-            <p>In the end of the day, what really matters is that you tried and persisted, just because of that you're already a winner. Keep up with the good work!</p>
-        </div>
-        <div class="buttons-alignment">
-            <div class="start-again-btn submit-btn">
-                <button aria-label="Start the quiz again." id="restart-btn">Start again</button>
+            <div class="section-text">
+                <p>Are you ready to try out your knowledge in the JavaScript language?</p>
+                <p>First things first, what's your name, Developer?</p>
             </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <div class="footer">
-            <ul>
-                <li>
-                    <a href="https://github.com/tinobragaa?tab=repositories" target="_blank" rel="noopener" aria-label="Visit the GitHub repository of the daveloper Valentino Aquino (opens in a new tab)"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/valentinobragaa/" target="_blank" rel="noopener" aria-label="Visit the Linkedin of the developer Valentino Aquino (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-<!-- Font Awesome Script  -->
-<script src="https://kit.fontawesome.com/6131d31248.js" crossorigin="anonymous"></script>
-<!-- JS Questions Link -->
-<script src="assets/js/questions.js"></script>
-<!-- JS Main Link -->
-<script src="assets/js/script.js"></script>
-</body>
+            <div class="buttons-alignment">
+                <label for="user-name"></label>
+                <input type="text" id="user-name" name="user-name" onclick="getInputValue();" class="color-entered-text form-input" placeholder="Your Name Here" minlength="2" maxlength="12" required>
+                <div class="submit-btn">
+                    <button aria-label="Submit your answer." id="user-submit">Submit</button>
+                </div>
+            </div>
+        </section>
+        <!-- Rules Interface -->
+        <section class="rules-area hide" id="rules-area">
+            <div class="section-header"> 
+                <h2>Quiz Rules</h2>
+            </div>
+            <div class="section-text">
+                <p>So, ${user-name}, the rules are pretty simple. This test contains 10 questions and you'll have to answer between a, b, c and d. In the end you will see how many you got it right.</p>
+                <p>Ready, set, go!</p>
+            </div>
+            <div class="submit-btn buttons-alignment">
+                <button aria-label="Start the quiz." id="start-quiz-btn">Start Quiz</button>
+            </div>
+        </section>
+        <!-- Questions Interface -->
+        <section class="questions-area hide" id="questions-area">
+            <div class="section-header"> 
+                <h2>Question 1</h2>
+            </div>
+            <div class="section-text">
+                <p class="question-text" id="question"></p>
+            </div>
+            <div class="buttons-container">
+                <div class="questions-left">
+                    <button aria-label="Answer A" class="answers-text" data-number="1">Answer 1</button>
+                    <button aria-label="Answer B" class="answers-text" data-number="2">Answer 2</button>
+                </div>
+                <div class="questions-right">
+                    <button aria-label="Answer C" class="answers-text" data-number="3">Answer 3</button>
+                    <button aria-label="Answer D" class="answers-text" data-number="4">Answer 4</button>
+                </div>
+            </div>
+        </section>
+        <!-- Score Interface -->
+        <section class="score-area hide" id="score-area">
+            <div class="section-header">
+                <h2>Yaaay! Good job, ${user-name}, you did it!</h2>
+            </div>
+            <div class="section-text">
+                <p>You score is... x/10!</p>
+                <p>In the end of the day, what really matters is that you tried and persisted, just because of that you're already a winner. Keep up with the good work!</p>
+            </div>
+            <div class="buttons-alignment">
+                <div class="start-again-btn submit-btn">
+                    <button aria-label="Start the quiz again." id="restart-btn">Start again</button>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/tinobragaa?tab=repositories" target="_blank" rel="noopener" aria-label="Visit the GitHub repository of the daveloper Valentino Aquino (opens in a new tab)"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/valentinobragaa/" target="_blank" rel="noopener" aria-label="Visit the Linkedin of the developer Valentino Aquino (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Font Awesome Script  -->
+        <script src="https://kit.fontawesome.com/6131d31248.js" crossorigin="anonymous"></script>
+        <!-- JS Questions Link -->
+        <script src="assets/js/questions.js"></script>
+        <!-- JS Main Link -->
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
