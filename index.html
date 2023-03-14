@@ -32,7 +32,7 @@
             </div>
             <div class="buttons-alignment">
                 <label for="user-name"></label>
-                <input type="text" id="user-name" name="user-name" onclick="getInputValue();" class="color-entered-text form-input" placeholder="Your Name Here" minlength="2" maxlength="12" required>
+                <input type="text" id="user-name" name="user-name" onblur="getUserName();" class="color-entered-text form-input" placeholder="Your Name Here" minlength="2" maxlength="12" required>
                 <div class="submit-btn">
                     <button aria-label="Submit your answer." id="user-submit">Submit</button>
                 </div>
@@ -40,7 +40,7 @@
         </section>
         <!-- Rules Interface -->
         <section class="rules-area hide" id="rules-area">
-            <div class="section-header"> 
+            <div class="section-header" id="alignment-header-rules"> 
                 <h2>Quiz Rules</h2>
             </div>
             <div class="section-text" id="rules-text">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="section-question box-item"> 
                     <h2>Question &nbsp;</h2>
-                    <h2 id="questionCounter"></h2>
+                    <h2 id="questionCounter">x/10</h2>
                 </div>
             </div>
             <div class="section-text">

@@ -26,16 +26,16 @@ let userName = document.getElementById("user-name").value;
 
 // Start Area Interface
 
-/**
- * This function take's the user name.
- * This will be used again in different interfaces.
- */
-function getInputValue(){
-  userName = document.getElementById("user-name").value;
-  console.log(userName);
+function getUserName() {
+  if (userName.value != "") {
+    let userName = document.getElementById("user-name").value;
+    let rulesText = document.getElementById("rules-text");
+    rulesText.innerText = `So, ${userName}, the rules are pretty simple. This test contains 10 questions and you'll have to answer between a, b, c and d. In the end you will see how many you got it right.`;
+  } else {
+    alertMessage.classList.remove("hide");
+    console.log(userName);
+  }
 }
-
-console.log(userName);
 
 // Submit Button to Load Rules Interface
 submitButton.addEventListener("click", () => {
