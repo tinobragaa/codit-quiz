@@ -12,14 +12,17 @@ const startQuiz = document.getElementById("start-quiz-btn");
 const restartButton = document.getElementById("restart-btn");
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("answers-text"));
-const correct_choice = 1;
-const max_questions = 10;
+const correctAnswer = 10;
+const totalQuestions = 10;
+const counterDisplay = document.getElementById("questionCounter");
+const scoreDisplay = document.getElementById("score");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
-let availableQuestion = [];
+let questionsSet = [];
+let userName = document.getElementById("user-name").value;
 
 // Start Area Interface
 
@@ -28,8 +31,11 @@ let availableQuestion = [];
  * This will be used again in different interfaces.
  */
 function getInputValue(){
-  var userName = document.getElementById("user-name").value;
-};
+  userName = document.getElementById("user-name").value;
+  console.log(userName);
+}
+
+console.log(userName);
 
 // Submit Button to Load Rules Interface
 submitButton.addEventListener("click", () => {
@@ -49,8 +55,8 @@ function setButtonState() {
         submitButton.disabled = true;
     } else {
         submitButton.disabled = false;
-    };
-};
+    }
+}
 
 // Rules Interface
 
@@ -64,33 +70,35 @@ startQuiz.addEventListener("click", () => {
  * This function establishes the structure of the quiz.
  * questionCounter counts in which question the users are on. In the beginning, it starts at 0.
  * score counts how many correct answers the user has.
- * availableQuestion connects the questions options.
+ * questionsSet connects the questions options.
  * getNewQuestion it's another function called to bring the next question.
  */
-startGame = () => {
+runQuiz = () => {
   questionCounter = 0;
   score = 0;
-  availableQuestion = [ ... questions];
-  console.log(availableQuestion);
+  questionsSet = [ ... questions];
+  console.log(questionsSet);
   getNewQuestion();
 };
 
 /**
- * This function builds the structure alongside the startGame function.
+ * This function builds the structure alongside the runQuiz function.
  * Contains an if statement that when the maximum amount of questions (10) is reached it changes to the last interface.
  * It gets a random question in the questions options.
  * choice inner function that connects the answer to the data type.
  * For every question taken, it takes out of the array of questions so the same question doesn't repeat itself.
  */
 getNewQuestion = () => {
-  if (availableQuestion === 0 || questionCounter >= max_questions) {
+  if (questionsSet === 0 || questionCounter >= totalQuestions) {
     questionsArea.classList.add("hide");
     scoreArea.classList.remove("hide");
-  };
+  }
 
   questionCounter++;
-  const questionIndex = Math.floor(Math.random() * availableQuestion.length);
-  currentQuestion = availableQuestion[questionIndex];
+  counterDisplay.innerText = `${questionCounter}/${totalQuestions}`;
+
+  const questionIndex = Math.floor(Math.random() * questionsSet.length);
+  currentQuestion = questionsSet[questionIndex];
   question.innerText = currentQuestion.question;
 
   choices.forEach( choice => {
@@ -98,7 +106,7 @@ getNewQuestion = () => {
     choice.innerText = currentQuestion["answer" + number];
   });
 
-  availableQuestion.splice(questionIndex, 1);
+  questionsSet.splice(questionIndex, 1);
 
   acceptingAnswers = true;
 };
@@ -116,23 +124,32 @@ choices.forEach(choice => {
   const selectedChoice = e.target;
   const selectedAnswer = selectedChoice.dataset["number"];
   
-  const classToApply =
+  const addClass =
   selectedAnswer == currentQuestion.correct ? "correct" : "incorrect";
-  selectedChoice.classList.add(classToApply);
+
+  if (addClass === "correct") {
+    incrementScore(correctAnswer);
+  }
+
+  selectedChoice.classList.add(addClass);
   
   setTimeout(() => {
-    selectedChoice.classList.remove(classToApply);
+    selectedChoice.classList.remove(addClass);
     getNewQuestion();
   }, 1200);
   });
 });
 
-startGame();
+incrementScore = num => {
+  score += num;
+  scoreDisplay.innerText = score;
+};
+
+runQuiz();
 
 // Score Interface
 
 // Start Again Button to Restart The Quiz
 restartButton.addEventListener("click", () => {
   window.location.reload();
-}
-);
+});

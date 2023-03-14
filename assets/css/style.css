@@ -161,6 +161,29 @@ input:-webkit-autofill {
     box-shadow: 0 0 2px #1E1E1E;
 }
 
+.section-question {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-counter {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #1E1E1E;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    margin: 10px;
+}
+
+.section-counter h3:first-child {
+    margin-top: 14px;
+}
+
 /* Question Button Hover Effect */
 .buttons-container button:hover {
     background-color: #F9DD3C;
