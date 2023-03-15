@@ -79,7 +79,6 @@ runQuiz = () => {
   questionCounter = 0;
   score = 0;
   questionsSet = [ ... questions];
-  console.log(questionsSet);
   getNewQuestion();
 };
 

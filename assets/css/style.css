@@ -462,8 +462,8 @@ input:-webkit-autofill {
 
     #subcontainer h3 {
         width: 50vw;
-        height: 2.3vh;
-        font-size: 2.5vw;
+        height: 20px;
+        font-size: 10px;
     }
 
     #score-text {

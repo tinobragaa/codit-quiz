@@ -210,7 +210,6 @@ The Nu HTML Checker (W3C) is used to validate HTML documents. The page passed wi
 ![404 Error HTML Validation](docs/404-html-validation.jpg)
 
 </details>
-<br>
 
 ### CSS Validation
 
@@ -224,11 +223,13 @@ The JSHint is used to validate JavaScript documents. The page passed without any
 
 ### Lighthouse
 
+Lighthouse testing was carried out to test the performance, accessibility, best practices and SEO of the quiz.
+
 <details>
 <summary>index HTML Lighthouse</summary>
 <br>
 
-![index HTML Lighthouse]()
+![index HTML Lighthouse](docs/index-html-lighthouse.jpg)
 
 </details>
 
@@ -236,7 +237,7 @@ The JSHint is used to validate JavaScript documents. The page passed without any
 <summary>404 Error HTML Validation</summary>
 <br>
 
-![404 Error HTML Lighthouse]()
+![404 Error HTML Lighthouse](docs/404-html-lighthouse.jpg)
 
 </details>
 <br>
