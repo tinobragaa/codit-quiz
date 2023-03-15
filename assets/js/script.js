@@ -27,13 +27,15 @@ let userName = document.getElementById("user-name").value;
 // Start Area Interface
 
 /**
- * This function takes the user name from the first interface and applies it to the second interface.
+ * This function takes the user name from the start interface and applies it to the rules and score interface.
  */
 function getUserName() {
   if (userName.value != "") {
     let userName = document.getElementById("user-name").value;
     let rulesText = document.getElementById("rules-text");
+    let scoreText = document.getElementById("score-text");
     rulesText.innerText = `So, ${userName}, the rules are pretty simple. This test contains 10 questions and you'll have to answer between a, b, c and d. In the end you will see how many you got it right.`;
+    scoreText.innerText = `Good job, ${userName}, you did it!`;
   }
 }
 
@@ -146,6 +148,9 @@ choices.forEach(choice => {
 incrementScore = num => {
   score += num;
   scoreDisplay.innerText = score;
+
+  let resultDisplay = document.getElementById("result-display");
+  resultDisplay.innerText = score;
 };
 
 runQuiz();

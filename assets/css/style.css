@@ -240,6 +240,24 @@ input:-webkit-autofill {
     box-shadow: 0 0 5px #1E1E1E;
 }
 
+#score-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 100px 4px 0;
+}
+
+.score-main-text {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.score-main-text p {
+    padding-top: 50px;
+}
+
 .start-again-btn button {
     font-family: 'Overpass Mono', monospace;
     text-transform: lowercase;
@@ -398,11 +416,15 @@ input:-webkit-autofill {
     #subcontainer a {
         font-size: 3vw;
     }
+
+    #score-text {
+        margin: 50px 4px 0;
+    }
 }
 
 /* 557px wide and down */
 
-@media screen and (max-width: 638px) {
+@media screen and (max-width: 557px) {
     .buttons-container button {
         font-size: 2vw;
     }
@@ -442,5 +464,32 @@ input:-webkit-autofill {
         width: 50vw;
         height: 2.3vh;
         font-size: 2.5vw;
+    }
+
+    #score-text {
+        font-size: 2rem;
+        margin: 50px 4px 0;
+    }
+
+    .score-main-text {
+        font-size: 1.3rem;
+        margin: 0 2px;
+    }
+}
+
+/* 365px wide and down */
+
+@media screen and (max-width: 365px) {
+    .section-text p {
+        padding-top: 0;
+    }
+
+    #score-text {
+        font-size: 2rem;
+        margin: 20px 4px 0;
+    }
+
+    .score-main-text p {
+        padding-top: 20px;
     }
 }
