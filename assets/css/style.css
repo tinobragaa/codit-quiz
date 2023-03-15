@@ -376,3 +376,26 @@ input:-webkit-autofill {
         margin: 0 10px 100px;
     }
 }
+
+/* 776px wide and down */
+
+@media screen and (max-width: 776px) {
+    .section-header {
+        font-size: 1rem;
+        margin: 5px;
+    }
+
+    .section-text {
+        font-size: 1.2rem;
+        margin: 5px;
+        padding: 0;
+    }
+
+    #subcontainer h2 {
+        font-size: 15vw;
+    }
+
+    #subcontainer a {
+        font-size: 3vw;
+    }
+}
