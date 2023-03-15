@@ -399,3 +399,48 @@ input:-webkit-autofill {
         font-size: 3vw;
     }
 }
+
+/* 557px wide and down */
+
+@media screen and (max-width: 638px) {
+    .buttons-container button {
+        font-size: 2vw;
+    }
+
+    .section-counter {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .section-counter h3:first-child {
+        margin-top: 20px;
+        padding-top: 14px;
+    }
+
+    .section-question {
+        padding-top: 40px;
+    }
+
+    .section-text p {
+        padding-top: 40px;
+    }
+
+    #question {
+        font-size: 1rem;
+    }
+
+    input {
+        margin-top: 30px;
+    }
+
+    .submit-btn {
+        padding-top: 0;
+        margin-top: 30px;
+    }
+
+    #subcontainer h3 {
+        width: 50vw;
+        height: 2.3vh;
+        font-size: 2.5vw;
+    }
+}
