@@ -358,3 +358,13 @@ input:-webkit-autofill {
 .footer ul li i:hover {
     text-shadow: 0 0 3px #ffffff;;
 }
+
+/* Media queries */
+
+/* 1280px wide and down */
+
+@media screen and (max-width: 1280px) {
+    .score-area, .questions-area, .rules-area, .start-area, .error-area {
+        margin: 0 auto 100px;
+    }
+}

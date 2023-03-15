@@ -224,13 +224,18 @@ The following devices were used to ensure the site was responsive:
 # Bugs
 
 Bug: When I wrote the function "getUserName" I couldn't make it work. What I wanted it to do was to take the asked user name in the first interface and use on the second interface. The problem was that it wasn't showing the value inside the ${}, when the function loaded the innet text was displayed but not the content inside the curly braces.
+
 Fix: The solution was the type of event used in the first place. In the HTML file I was using onclick event which was preventing the function to work like needed. The appropriate event is the onblur: it triggers the function once the field loses focus (i.e. the user navigates away from the field).
 
 Bug: Change the background colour of the input type text when auto-filling from the browser.
+
 Fix: I was able to achieve that using the "-webkit-autofill" so whenever the user fills the input field with the browser auto-filling it doesn't change its colour.
 
 # Deployment
 
+[Click Here To See The Live Website](https://tinobragaa.github.io/codit-quiz/)
+
+### Deploy
 The website was deployed through the use of GitHub Pages, a feature built in to GitHub. This can be done by following the steps below.
 1. In the desired repository, click on "Settings" from the top menu.
 2. From the side menu to your left, select "Pages" in the "Code and automation" section.
@@ -257,15 +262,10 @@ To contribute or check the code yourself, you can fork or clone the repository a
 6. Type "git clone", and then paste the URL you copied earlier. It will look like this, with your GitHub username instead of "YOUR-USERNAME": "$ git clone https://github.com/YOUR-USERNAME/DESIRED-REPOSITORY"
 7. Press Enter. Your local clone will be created.
 
-[Click Here To See The Live Website](https://tinobragaa.github.io/codit-quiz/)
-
 # Credits
 
-A list of references used for the site:
+A list of references and tutorials used for the site:
 
-### References and Tutorials
-
-* [Favicon](https://favicon.io/)
 * [Codepen](https://codepen.io/trending)
 * [Quiz Questions](https://codescracker.com/index.htm)
 * [Get Input's Value](https://www.tabnine.com/academy/javascript/get-value-of-input/)
