@@ -368,3 +368,11 @@ input:-webkit-autofill {
         margin: 0 auto 100px;
     }
 }
+
+/* 1035px wide and down */
+
+@media screen and (max-width: 1035px) {
+    .score-area, .questions-area, .rules-area, .start-area, .error-area {
+        margin: 0 10px 100px;
+    }
+}
