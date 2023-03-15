@@ -221,6 +221,14 @@ The following devices were used to ensure the site was responsive:
 - Iphone 14 Pro Max
 - Notebook Acer Predator Helios 300
 
+# Bugs
+
+Bug: When I wrote the function "getUserName" I couldn't make it work. What I wanted it to do was to take the asked user name in the first interface and use on the second interface. The problem was that it wasn't showing the value inside the ${}, when the function loaded the innet text was displayed but not the content inside the curly braces.
+Fix: The solution was the type of event used in the first place. In the HTML file I was using onclick event which was preventing the function to work like needed. The appropriate event is the onblur: it triggers the function once the field loses focus (i.e. the user navigates away from the field).
+
+Bug: Change the background colour of the input type text when auto-filling from the browser.
+Fix: I was able to achieve that using the "-webkit-autofill" so whenever the user fills the input field with the browser auto-filling it doesn't change its colour.
+
 # Deployment
 
 The website was deployed through the use of GitHub Pages, a feature built in to GitHub. This can be done by following the steps below.
@@ -260,9 +268,11 @@ A list of references used for the site:
 * [Favicon](https://favicon.io/)
 * [Codepen](https://codepen.io/trending)
 * [Quiz Questions](https://codescracker.com/index.htm)
+* [Get Input's Value](https://www.tabnine.com/academy/javascript/get-value-of-input/)
 * [Enable/Disable Button Tutorial](https://stackdiary.com/enable-disable-button-javascript/)
 * [Quiz Tutorial](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
 * [Behance/Cobyte](https://www.behance.net/gallery/129975245/Cobyte-brand-identity?tracking_source=search_projects%7Ccoding+design)
+* [Browser Input Text Autofill](https://stackoverflow.com/questions/29580704/change-input-background-to-transparent-on-autocomplete-form)
 - Love Maths Project
 
 # Acknowledgements
