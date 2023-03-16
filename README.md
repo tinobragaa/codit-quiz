@@ -8,41 +8,47 @@
 
 [Live Website](https://tinobragaa.github.io/codit-quiz/)
 
-# Table Of Contents
+# Table of Contents
 
-* [User Experience](#User-Experience)
-  * [User Stories](#User-Stories)
-
-* [Design](#Design)
-  * [Colour Scheme](#Colour-Scheme)
-  * [Typography](#Typography)
-  * [Imagery](#Imagery)
-  * [Wireframes](#Wireframes)
-  * [Features](#Features)
-    
-  * [Future Implementations](#Future-Implementations)
-  * [Accessibility](#Accessibility)
-
-* [Technologies Used](#Technologies-Used)
-  * [Languages Used](#Languages-Used)
-  * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
-
-* [Deployment & Local Development](#Deployment-&-Local-Development)
-  * [Deployment](#Deployment)
-  * [Local Development](#Local-Development)
-    * [How to Fork](#How-to-Fork)
-    * [How to Clone](#How-to-Clone)
-
-* [Testing](#Testing)
-  * [Solved Bugs](#Solved-Bugs)
-  * [Known Bugs](#Known-Bugs)
-  
-* [Credits](#Credits)
-  * [Code Used](#Code-Used)
-  * [Content](#Content)
-  * [Media](#Media)
-  * [Acknowledgments](#Acknowledgments)
-
+- [\<codit\> Quiz](#--codit---quiz)
+- [Table of Contents](#table-of-contents)
+- [User Experience (UX)](#user-experience--ux-)
+  * [Business Goals](#business-goals)
+    + [User Goals](#user-goals)
+    + [Website Owner Goals](#website-owner-goals)
+    + [Target Audience](#target-audience)
+    + [User Expectations](#user-expectations)
+  * [User Stories](#user-stories)
+    + [First-Time User](#first-time-user)
+    + [Returning Userå](#returning-user-)
+    + [Site Owner](#site-owner)
+- [Design](#design)
+  * [Wireframes](#wireframes)
+  * [Typography](#typography)
+  * [Colour Palette](#colour-palette)
+  * [Structure](#structure)
+- [Features](#features)
+    + [Quiz - Start Interface](#quiz---start-interface)
+    + [Quiz - Rules Interface](#quiz---rules-interface)
+    + [Quiz - Game Interface](#quiz---game-interface)
+    + [Quiz - Score Interface](#quiz---score-interface)
+    + [404 Error Page](#404-error-page)
+- [Technologies Used](#technologies-used)
+    + [Languages](#languages)
+    + [Frameworks and Tools](#frameworks-and-tools)
+- [Testing](#testing)
+    + [HTML Validation](#html-validation)
+    + [CSS Validation](#css-validation)
+    + [JS Validation](#js-validation)
+    + [Lighthouse](#lighthouse)
+    + [Accessibility](#accessibility)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+    + [Deploy](#deploy)
+    + [Fork](#fork)
+    + [Clone](#clone)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
 # User Experience (UX)
 
@@ -78,7 +84,7 @@
 2. As a first-time user, I want to see if my answer is correct or incorrect
 3. As a first-time user, I want to be able to restart the quiz
 
-### Returning User
+### Returning Userå
 1. As a returning user, I want to different questions
 2. As a returning user, I want to improve my knowledge of JS
 3. As a returning user, I want to have fun in a well designed game
@@ -273,10 +279,10 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 
 </details>
 <details>
-<summary>Inccorrect Answer</summary>
+<summary>Incorrect Answer</summary>
 <br>
 
-![Inccorrect Answer](docs/wrong-answer-response.jpg)
+![Incorrect Answer](docs/wrong-answer-response.jpg)
 
 </details>
 
@@ -353,6 +359,7 @@ The following frameworks and tools were used to develop the website:
 - JSHint Validation
 - Adobe Photoshop 2023
 - Techsini Mockup Generator
+- GitHub Wiki TOC generator
 - W3C Markup Validation Service
 
 # Testing
@@ -431,7 +438,7 @@ The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webp
 <summary>index HTML WAVE</summary>
 <br>
 
-![index HTML WAVE](docs)
+![index HTML WAVE](docs/index-html-wave.jpg)
 
 </details>
 
@@ -471,6 +478,10 @@ Bug: When I tried the quiz on my phone the text inside the buttons inherit the d
 
 Fix: On the CSS part I defined the volor to prevent inherit it from the deafult. 
 
+Bug: I didn't want the label element appearing on the site. However, the wave validation keeps tracking it as an error.
+
+Fix: Reading through the wave website, the appropriate way to do it is using a class .visuallyhidden.
+
 # Deployment
 
 [Click Here To See The Live Website](https://tinobragaa.github.io/codit-quiz/)
@@ -508,6 +519,7 @@ A list of references and tutorials used for the site:
 
 * [Codepen](https://codepen.io/trending)
 * [Quiz Questions](https://codescracker.com/index.htm)
+* [Hiding Label Element](https://www.w3.org/WAI/tutorials/forms/labels/)
 * [Get Input's Value](https://www.tabnine.com/academy/javascript/get-value-of-input/)
 * [Enable/Disable Button Tutorial](https://stackdiary.com/enable-disable-button-javascript/)
 * [Quiz Tutorial](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)

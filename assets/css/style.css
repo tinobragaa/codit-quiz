@@ -77,8 +77,17 @@ body {
     text-align: center;
 }
 
-.buttons-alignment label {
-    display: none;
+/* Code from: https://www.w3.org/WAI/tutorials/forms/labels/ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 input {
