@@ -12,7 +12,7 @@
 
 - [\<codit\> Quiz](#--codit---quiz)
 - [Table of Contents](#table-of-contents)
-- [User Experience (UX)](#user-experience--ux-)
+- [User Experience (UX)](#user-experience-ux)
   * [Business Goals](#business-goals)
     + [User Goals](#user-goals)
     + [Website Owner Goals](#website-owner-goals)

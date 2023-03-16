@@ -513,7 +513,7 @@ input:-webkit-autofill {
 /* Disable hover effect on touch-screen devices */
 
 /* Code from: http://www.javascriptkit.com/dhtmltutors/sticky-hover-issue-solutions.shtml */
-@media (hover:none), (hover:on-demand) {
+@media (hover:none) {
     .buttons-container button:hover { 
         background: none;
     }
