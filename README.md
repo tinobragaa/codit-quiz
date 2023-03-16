@@ -166,6 +166,177 @@ To keep the user interface as easy and smooth as possible I choose 4 game areas 
 
 # Features
 
+The website contains 2 pages: quiz page with 4 interfaces and 404 page. 
+
+### Quiz - Start Interface
+- Logo, Quiz Name.
+- Big title defining the purpose of the website.
+- Quiz container.
+- JavaScript hoover effect.
+- Input hoover effect.
+- Button hoover effect.
+- Sticky footer bar with links.
+<details>
+<summary>Quiz - Start Interface</summary>
+<br>
+
+![Start Interface](docs/start-interface.jpg)
+
+</details>
+<details>
+<summary>JavaScript Text Hoover Effect</summary>
+<br>
+
+![JavaScript Text Hoover Effect](docs/javascript-text-hoover.jpg)
+
+</details>
+<details>
+<summary>Input Hoover Effect</summary>
+<br>
+
+![Input Hoover Effect](docs/input-hoover.jpg)
+
+</details>
+<details>
+<summary>Submit Button Hoover Effect</summary>
+<br>
+
+![Submit Button Hoover Effect](docs/submit-button-hover.jpg)
+
+</details>
+<details>
+<summary>Sticky Footer - Social Media Links</summary>
+<br>
+
+![Sticky Footer - Social Media Links](docs/sticky-footer.jpg)
+
+</details>
+<br>
+
+### Quiz - Rules Interface
+- Maintain default design: logo, big title, container style, button style and footer. Concisive design.
+- User's name reuse.
+- Start Quiz button hoover effect.
+<details>
+<summary>Quiz - Start Interface</summary>
+<br>
+
+![Rules Interface](docs/rules-interface.jpg)
+
+</details>
+<details>
+<summary>User Name Reuse</summary>
+<br>
+
+![User Name Reuse](docs/user-name-rules.jpg)
+
+</details>
+<details>
+<summary>Start Quiz Button Hoover Effect</summary>
+<br>
+
+![Start Quiz Button Hoover Effect](docs/start-quiz-button.jpg)
+
+</details>
+<br>
+
+### Quiz - Game Interface
+- Maintain default design: logo, big title, container style and footer. Concisive design.
+- Score box to keep track of the right answer.
+- Question counter to know in which question the user is currently on.
+- Green response for correct answers.
+- Red response for incorrect answers.
+<details>
+<summary>Quiz - Game Interface</summary>
+<br>
+
+![Game Interface](docs/quiz-interface.jpg)
+
+</details>
+<details>
+<summary>Score Box</summary>
+<br>
+
+![Score Box](docs/score-box.jpg)
+
+</details>
+<details>
+<summary>Question Counter</summary>
+<br>
+
+![Question Counter](docs/question-counter.jpg)
+
+</details>
+<details>
+<summary>Correct Answer</summary>
+<br>
+
+![Correct Answer](docs/correct-answer-response.jpg)
+
+</details>
+<details>
+<summary>Inccorrect Answer</summary>
+<br>
+
+![Inccorrect Answer](docs/wrong-answer-response.jpg)
+
+</details>
+<br>
+
+### Quiz - Score Interface
+- Maintain default design: logo, big title, container style, button style and footer. Concisive design.
+- Showcase user's name.
+- Showcase user's final score.
+- Restart button hoover effect.
+<details>
+<summary>Quiz - Score Interface</summary>
+<br>
+
+![Score Interface](docs/score-interface.jpg)
+
+</details>
+<details>
+<summary>User's Name</summary>
+<br>
+
+![User's Name](docs/user-name-scores.jpg)
+
+</details>
+<details>
+<summary>User's Final Score</summary>
+<br>
+
+![User's Final Score](docs/user-final-score.jpg)
+
+</details>
+<details>
+<summary>Restart Button Hoover Effect</summary>
+<br>
+
+![Restart Button Hoover Effect](docs/restart-button.jpg)
+
+</details>
+<br>
+
+### 404 Error Page
+- Maintain default design: logo, big title, container style, button style and footer. Concisive design.
+- Back to quiz button hoover effect.
+<details>
+<summary>404 Error Page</summary>
+<br>
+
+![404 Error Page](docs/404-error-page.jpg)
+
+</details>
+<details>
+<summary>Quiz Button</summary>
+<br>
+
+![Quiz Button](docs/quiz-button.jpg)
+
+</details>
+<br>
+
 # Technologies Used
 
 ### Languages
@@ -259,7 +430,7 @@ Lighthouse testing was carried out to test the performance, accessibility, best 
 
 ### Accessibility
 
-The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webpages met accessibility standards. All 5 pages passed without any errors.
+The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webpages met accessibility standards. All pages passed without any errors.
 
 Responsive test on multiple devices
 The following devices were used to ensure the site was responsive:
