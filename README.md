@@ -430,9 +430,9 @@ Lighthouse testing was carried out to test the performance, accessibility, best 
 
 ### Accessibility
 
-The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webpages met accessibility standards. All pages passed without any errors.
+The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webpages met accessibility standards.
 
-Responsive test on multiple devices
+Responsive test on multiple devices.
 The following devices were used to ensure the site was responsive:
 
 - Ipad Pro

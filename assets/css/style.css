@@ -258,6 +258,7 @@ input:-webkit-autofill {
 
 .score-main-text p {
     padding-top: 50px;
+    
 }
 
 .start-again-btn button {
@@ -493,5 +494,13 @@ input:-webkit-autofill {
 
     .score-main-text p {
         padding-top: 20px;
+    }
+}
+
+/* Disable hover effect on touch-screen devices */
+
+@media (hover:none), (hover:on-demand) {
+    .buttons-container button:hover { 
+        background: none;
     }
 }
