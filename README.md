@@ -4,7 +4,7 @@
 
 \<codit\> Your JavaScript Quiz, is a simple quiz designed for newbies in software development. The game has 10 questions for each new entry and by the end, you can see how many questions you got right. This project's goal is to help new developers not only to test their knowledge but also to learn more about JS in a fun and interactive way.
 
-![Mockup image]()
+![Mockup image](docs/codit-mockup.jpg)
 
 [Live Website](https://tinobragaa.github.io/codit-quiz/)
 
