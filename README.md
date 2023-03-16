@@ -211,7 +211,6 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 ![Sticky Footer - Social Media Links](docs/sticky-footer.jpg)
 
 </details>
-<br>
 
 ### Quiz - Rules Interface
 - Maintain default design: logo, big title, container style, button style and footer. Concisive design.
@@ -238,7 +237,6 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 ![Start Quiz Button Hover Effect](docs/start-quiz-button.jpg)
 
 </details>
-<br>
 
 ### Quiz - Game Interface
 - Maintain default design: logo, big title, container style and footer. Concisive design.
@@ -281,7 +279,6 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 ![Inccorrect Answer](docs/wrong-answer-response.jpg)
 
 </details>
-<br>
 
 ### Quiz - Score Interface
 - Maintain default design: logo, big title, container style, button style and footer. Concisive design.
@@ -316,7 +313,6 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 ![Restart Button Hover Effect](docs/restart-button.jpg)
 
 </details>
-<br>
 
 ### 404 Error Page
 - Maintain default design: logo, big title, container style, button style and footer. Concisive design.
@@ -335,7 +331,6 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 ![Quiz Button](docs/quiz-button.jpg)
 
 </details>
-<br>
 
 # Technologies Used
 
@@ -431,6 +426,22 @@ Lighthouse testing was carried out to test the performance, accessibility, best 
 ### Accessibility
 
 The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webpages met accessibility standards.
+
+<details>
+<summary>index HTML WAVE</summary>
+<br>
+
+![index HTML WAVE](docs)
+
+</details>
+
+<details>
+<summary>404 Error HTML Validation</summary>
+<br>
+
+![404 Error HTML WAVE](docs/404-html-wave.jpg)
+
+</details>
 
 Responsive test on multiple devices.
 The following devices were used to ensure the site was responsive:
