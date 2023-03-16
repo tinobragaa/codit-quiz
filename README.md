@@ -172,9 +172,9 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 - Logo, Quiz Name.
 - Big title defining the purpose of the website.
 - Quiz container.
-- JavaScript hoover effect.
-- Input hoover effect.
-- Button hoover effect.
+- JavaScript hover effect.
+- Input hover effect.
+- Button hover effect.
 - Sticky footer bar with links.
 <details>
 <summary>Quiz - Start Interface</summary>
@@ -184,24 +184,24 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 
 </details>
 <details>
-<summary>JavaScript Text Hoover Effect</summary>
+<summary>JavaScript Text Hover Effect</summary>
 <br>
 
-![JavaScript Text Hoover Effect](docs/javascript-text-hoover.jpg)
+![JavaScript Text Hover Effect](docs/javascript-text-hover.jpg)
 
 </details>
 <details>
-<summary>Input Hoover Effect</summary>
+<summary>Input Hover Effect</summary>
 <br>
 
-![Input Hoover Effect](docs/input-hoover.jpg)
+![Input Hover Effect](docs/input-hover.jpg)
 
 </details>
 <details>
-<summary>Submit Button Hoover Effect</summary>
+<summary>Submit Button Hover Effect</summary>
 <br>
 
-![Submit Button Hoover Effect](docs/submit-button-hover.jpg)
+![Submit Button Hover Effect](docs/submit-button-hover.jpg)
 
 </details>
 <details>
@@ -216,7 +216,7 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 ### Quiz - Rules Interface
 - Maintain default design: logo, big title, container style, button style and footer. Concisive design.
 - User's name reuse.
-- Start Quiz button hoover effect.
+- Start Quiz button hover effect.
 <details>
 <summary>Quiz - Start Interface</summary>
 <br>
@@ -232,10 +232,10 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 
 </details>
 <details>
-<summary>Start Quiz Button Hoover Effect</summary>
+<summary>Start Quiz Button Hover Effect</summary>
 <br>
 
-![Start Quiz Button Hoover Effect](docs/start-quiz-button.jpg)
+![Start Quiz Button Hover Effect](docs/start-quiz-button.jpg)
 
 </details>
 <br>
@@ -287,7 +287,7 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 - Maintain default design: logo, big title, container style, button style and footer. Concisive design.
 - Showcase user's name.
 - Showcase user's final score.
-- Restart button hoover effect.
+- Restart button hover effect.
 <details>
 <summary>Quiz - Score Interface</summary>
 <br>
@@ -310,17 +310,17 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 
 </details>
 <details>
-<summary>Restart Button Hoover Effect</summary>
+<summary>Restart Button Hover Effect</summary>
 <br>
 
-![Restart Button Hoover Effect](docs/restart-button.jpg)
+![Restart Button Hover Effect](docs/restart-button.jpg)
 
 </details>
 <br>
 
 ### 404 Error Page
 - Maintain default design: logo, big title, container style, button style and footer. Concisive design.
-- Back to quiz button hoover effect.
+- Back to quiz button hover effect.
 <details>
 <summary>404 Error Page</summary>
 <br>
@@ -452,6 +452,14 @@ Bug: Change the background colour of the input type text when auto-filling from 
 
 Fix: I was able to achieve that using the "-webkit-autofill" so whenever the user fills the input field with the browser auto-filling it doesn't change its colour.
 
+Bug: When I tried the quiz on my phone the hover effects were sticky to the buttons. The background colour that was set through the hover effect wouldn't disappear on the touch screen capabilities.
+
+Fix: Added a media querie to disable the hover effect on touch screen devices.
+
+Bug: When I tried the quiz on my phone the text inside the buttons inherit the default colour. I was ecpeting it to be black but it was coming along blue.
+
+Fix: On the CSS part I defined the volor to prevent inherit it from the deafult. 
+
 # Deployment
 
 [Click Here To See The Live Website](https://tinobragaa.github.io/codit-quiz/)
@@ -492,6 +500,7 @@ A list of references and tutorials used for the site:
 * [Get Input's Value](https://www.tabnine.com/academy/javascript/get-value-of-input/)
 * [Enable/Disable Button Tutorial](https://stackdiary.com/enable-disable-button-javascript/)
 * [Quiz Tutorial](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
+* [Hover Effect Mobile Devices](http://www.javascriptkit.com/dhtmltutors/sticky-hover-issue-solutions.shtml)
 * [Behance/Cobyte](https://www.behance.net/gallery/129975245/Cobyte-brand-identity?tracking_source=search_projects%7Ccoding+design)
 * [Browser Input Text Autofill](https://stackoverflow.com/questions/29580704/change-input-background-to-transparent-on-autocomplete-form)
 - Love Maths Project
