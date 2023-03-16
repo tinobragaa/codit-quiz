@@ -162,4 +162,4 @@ const questions = [
         answer4: "ext",
         correct: 3
     }
-]
+];

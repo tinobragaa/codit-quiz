@@ -193,7 +193,7 @@ The following frameworks and tools were used to develop the website:
 
 ### HTML Validation
 
-The Nu HTML Checker (W3C) is used to validate HTML documents. The page passed without any errors, the only warning it shows is an empty heading. This heading will be filled with JavaScript through the quiz.
+The Nu HTML Checker (W3C) is used to validate HTML documents. The files passed without any errors.
 
 <details>
 <summary>index HTML Validation</summary>
@@ -213,13 +213,29 @@ The Nu HTML Checker (W3C) is used to validate HTML documents. The page passed wi
 
 ### CSS Validation
 
-The W3C Jigsaw CSS Validation Service is used to validate CSS documents. The page passed without any errors.
+The W3C Jigsaw CSS Validation Service is used to validate CSS documents. The file passed without any errors.
 
 ![CSS Validation](docs/css-validation.jpg)
 
 ### JS Validation
 
-The JSHint is used to validate JavaScript documents. The page passed without any errors.
+The JSHint is used to validate JavaScript documents. The files passed without any errors.
+
+<details>
+<summary>Main JS Validation</summary>
+<br>
+
+![Main JS Validation](docs/main-js-validation.jpg)
+
+</details>
+
+<details>
+<summary>Questions JS Validation</summary>
+<br>
+
+![Questions JS Validation](docs/questions-js-validation.jpg)
+
+</details>
 
 ### Lighthouse
 
@@ -240,7 +256,6 @@ Lighthouse testing was carried out to test the performance, accessibility, best 
 ![404 Error HTML Lighthouse](docs/404-html-lighthouse.jpg)
 
 </details>
-<br>
 
 ### Accessibility
 
