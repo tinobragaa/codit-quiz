@@ -34,17 +34,23 @@ function getUserName() {
   let userName = userNameInput.value.trim();
   let rulesText = document.getElementById("rules-text");
   let scoreText = document.getElementById("score-text");
+  let errorMessage = document.getElementById("error-message");
 
   if (userName === "" || userName.length < 3 || userName.length > 10 || /\d/.test(userName)) {
     userNameInput.value = "";
     submitButton.disabled = true;
+    errorMessage.textContent = "Please enter a valid name (3-10 letters and no numbers)";
+    errorMessage.style.display = "block";
     return;
+  } else {
+    errorMessage.style.display = "none";
   }
 
   rulesText.innerText = `So, ${userName}, the rules are pretty simple. This test contains 10 questions and you'll have to answer between a, b, c and d. In the end you will see how many you got it right.`;
   scoreText.innerText = `Good job, ${userName}, you did it!`;
 
   submitButton.disabled = false;
+  errorMessage.style.display = "none";
 }
 
 // Submit Button to Load Rules Interface

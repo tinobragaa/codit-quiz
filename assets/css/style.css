@@ -78,7 +78,6 @@ body {
 }
 
 /* Code from: https://www.w3.org/WAI/tutorials/forms/labels/ */
-
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -115,7 +114,7 @@ input:-webkit-autofill {
 }
 
 .submit-btn {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .submit-btn button {
@@ -130,6 +129,14 @@ input:-webkit-autofill {
     border: 2px solid #1E1E1E;
     box-shadow: 0 0 2px #1E1E1E;
 }
+
+/* Error Message */
+#error-message {
+    display: none;
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+  }  
 
 /* Submit Button Hover Effect */
 .submit-btn button:hover {
