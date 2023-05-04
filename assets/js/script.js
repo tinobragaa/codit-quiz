@@ -27,16 +27,24 @@ let userName = document.getElementById("user-name").value;
 // Start Area Interface
 
 /**
- * This function takes the user name from the start interface and applies it to the rules and score interface.
+ * This function takes the user's name from the start interface and applies it to the rules and score interface.
  */
 function getUserName() {
-  if (userName.value != "") {
-    let userName = document.getElementById("user-name").value;
-    let rulesText = document.getElementById("rules-text");
-    let scoreText = document.getElementById("score-text");
-    rulesText.innerText = `So, ${userName}, the rules are pretty simple. This test contains 10 questions and you'll have to answer between a, b, c and d. In the end you will see how many you got it right.`;
-    scoreText.innerText = `Good job, ${userName}, you did it!`;
+  let userNameInput = document.getElementById("user-name");
+  let userName = userNameInput.value.trim();
+  let rulesText = document.getElementById("rules-text");
+  let scoreText = document.getElementById("score-text");
+
+  if (userName === "" || userName.length < 3 || userName.length > 10 || /\d/.test(userName)) {
+    userNameInput.value = "";
+    submitButton.disabled = true;
+    return;
   }
+
+  rulesText.innerText = `So, ${userName}, the rules are pretty simple. This test contains 10 questions and you'll have to answer between a, b, c and d. In the end you will see how many you got it right.`;
+  scoreText.innerText = `Good job, ${userName}, you did it!`;
+
+  submitButton.disabled = false;
 }
 
 // Submit Button to Load Rules Interface
