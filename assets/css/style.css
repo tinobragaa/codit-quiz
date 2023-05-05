@@ -210,6 +210,22 @@ input:-webkit-autofill {
     margin: 10px;
 }
 
+.section-timer {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #1E1E1E;
+    color: #ffffff;
+    float: right;
+    text-align: center;
+    margin: 10px;
+}
+
+.section-timer h3:first-child {
+    margin-top: 14px;
+}
+
+
 .section-counter h3:first-child {
     margin-top: 14px;
 }
