@@ -46,8 +46,9 @@ function getUserName() {
     errorMessage.style.display = "none";
   }
 
-  rulesText.innerText = `So, ${userName}, the rules are pretty simple. This test contains 10 questions and you'll have to answer between a, b, c and d. In the end you will see how many you got it right.`;
-  scoreText.innerText = `Good job, ${userName}, you did it!`;
+  rulesText.innerText = `So, ${userName}, the rules are pretty simple. 
+  This test contains 10 questions and you'll have to select one option among the four options provided.
+  In the end you will see how many you got it right.`;
 
   submitButton.disabled = false;
   errorMessage.style.display = "none";

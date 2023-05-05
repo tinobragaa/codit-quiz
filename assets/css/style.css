@@ -31,6 +31,10 @@ body {
     color: #1E1E1E;
 }
 
+.top-bar a:hover {
+    text-shadow: 2px 2px #F9DD3C;
+}
+
 .top-text {
     font-size: 3vw;
     letter-spacing: 18px;
