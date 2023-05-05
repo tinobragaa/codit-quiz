@@ -16,6 +16,7 @@ const correctAnswer = 10;
 const totalQuestions = 10;
 const counterDisplay = document.getElementById("questionCounter");
 const scoreDisplay = document.getElementById("score");
+const timerElement = document.getElementById("timer");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -23,6 +24,8 @@ let score = 0;
 let questionCounter = 0;
 let questionsSet = [];
 let userName = document.getElementById("user-name").value;
+let timeLeft;
+let timer;
 
 // Start Area Interface
 
@@ -49,6 +52,8 @@ function getUserName() {
   rulesText.innerText = `So, ${userName}, the rules are pretty simple. 
   This test contains 10 questions and you'll have to select one option among the four options provided.
   In the end you will see how many you got it right.`;
+
+  scoreText.innerText = `Good job, ${userName}, you did it!`;
 
   submitButton.disabled = false;
   errorMessage.style.display = "none";
@@ -81,7 +86,10 @@ function setButtonState() {
 startQuiz.addEventListener("click", () => {
   rulesArea.classList.add("hide");
   questionsArea.classList.remove("hide");
+  startTimer()
 });
+
+// Questions Interface
 
 /**
  * This function establishes the structure of the quiz.
@@ -95,6 +103,7 @@ runQuiz = () => {
   score = 0;
   questionsSet = [ ... questions];
   getNewQuestion();
+  stopTimer();
 };
 
 /**
@@ -105,6 +114,7 @@ runQuiz = () => {
  * For every question taken, it takes out of the array of questions so the same question doesn't repeat itself.
  */
 getNewQuestion = () => {
+  stopTimer();
   if (questionsSet === 0 || questionCounter >= totalQuestions) {
     questionsArea.classList.add("hide");
     scoreArea.classList.remove("hide");
@@ -125,6 +135,10 @@ getNewQuestion = () => {
   questionsSet.splice(questionIndex, 1);
 
   acceptingAnswers = true;
+
+  timeLeft = 30;
+  timerElement.innerText = timeLeft;
+  startTimer();
 };
 
 /**
@@ -135,7 +149,6 @@ getNewQuestion = () => {
 choices.forEach(choice => {
   choice.addEventListener("click", e => {
   if (!acceptingAnswers) return;
-  
   acceptingAnswers = false;
   const selectedChoice = e.target;
   const selectedAnswer = selectedChoice.dataset["number"];
@@ -156,6 +169,7 @@ choices.forEach(choice => {
   });
 });
 
+
 /** 
 * This function increaser the user's score for every correct 
 */
@@ -168,6 +182,32 @@ incrementScore = num => {
 };
 
 runQuiz();
+
+// Timer
+// Sets timer to 30 seconds
+function startTimer() {
+  timer = setInterval(function () {
+      console.log(timer)
+      countdown();
+      timerElement.innerText = timeLeft;
+  }, 1000);
+}
+
+// Counts down from 30 seconds on each question
+// Prevents user from clicking answer buttons once timer reaches 0, and boldens nextButton
+function countdown() {
+  if (timeLeft === 0) {
+      stopTimer();
+      getNewQuestion();
+  } else {
+      timeLeft--;
+  }
+}
+
+//  Stops timer
+function stopTimer() {
+  clearInterval(timer);
+}
 
 // Score Interface
 
