@@ -10,6 +10,10 @@ const submitButton = document.getElementById("user-submit");
 const formInput = document.querySelector(".form-input");
 const startQuiz = document.getElementById("start-quiz-btn");
 const restartButton = document.getElementById("restart-btn");
+const answerButton1 = document.getElementById("answer-btn-1");
+const answerButton2 = document.getElementById("answer-btn-2");
+const answerButton3 = document.getElementById("answer-btn-3");
+const answerButton4 = document.getElementById("answer-btn-4");
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("answers-text"));
 const correctAnswer = 10;
@@ -115,6 +119,18 @@ runQuiz = () => {
  */
 getNewQuestion = () => {
   stopTimer();
+  answerButton1.removeAttribute("disabled", "disabled");
+  answerButton2.removeAttribute("disabled", "disabled");
+  answerButton3.removeAttribute("disabled", "disabled");
+  answerButton4.removeAttribute("disabled", "disabled");
+  answerButton1.classList.add("hover");
+  answerButton2.classList.add("hover");
+  answerButton3.classList.add("hover");
+  answerButton4.classList.add("hover");
+  answerButton1.classList.remove("red-background");
+  answerButton2.classList.remove("red-background");
+  answerButton3.classList.remove("red-background");
+  answerButton4.classList.remove("red-background");
   if (questionsSet === 0 || questionCounter >= totalQuestions) {
     questionsArea.classList.add("hide");
     scoreArea.classList.remove("hide");
@@ -148,6 +164,7 @@ getNewQuestion = () => {
  */
 choices.forEach(choice => {
   choice.addEventListener("click", e => {
+  stopTimer()
   if (!acceptingAnswers) return;
   acceptingAnswers = false;
   const selectedChoice = e.target;
@@ -187,7 +204,6 @@ runQuiz();
 // Sets timer to 30 seconds
 function startTimer() {
   timer = setInterval(function () {
-      console.log(timer)
       countdown();
       timerElement.innerText = timeLeft;
   }, 1000);
@@ -198,11 +214,27 @@ function startTimer() {
 function countdown() {
   if (timeLeft === 0) {
       stopTimer();
-      getNewQuestion();
+      answerButton1.setAttribute("disabled", "disabled");
+      answerButton2.setAttribute("disabled", "disabled");
+      answerButton3.setAttribute("disabled", "disabled");
+      answerButton4.setAttribute("disabled", "disabled");
+      answerButton1.classList.remove("hover");
+      answerButton2.classList.remove("hover");
+      answerButton3.classList.remove("hover");
+      answerButton4.classList.remove("hover");
+      answerButton1.classList.add("red-background");
+      answerButton2.classList.add("red-background");
+      answerButton3.classList.add("red-background");
+      answerButton4.classList.add("red-background");
+      setTimeout(() => {
+        getNewQuestion();
+      }, 2800);
   } else {
       timeLeft--;
   }
 }
+
+choices.disabled = true;
 
 //  Stops timer
 function stopTimer() {
