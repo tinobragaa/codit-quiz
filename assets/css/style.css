@@ -307,6 +307,26 @@ input:-webkit-autofill {
     background-color: #F9DD3C;
 }
 
+/* Scoreboard Interface */
+
+.scoreboard-area {
+    background-color: #ffffff;
+    height: 560px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 3px double #1E1E1E;
+    box-shadow: 0 0 5px #1E1E1E;
+    margin-bottom: 100px;
+}
+
+.scoreboard {
+    text-align: center;
+}
+
+.scoreboard li {
+    list-style-type: none;
+}
+
 /* JavaScript Classes */
 
 .hide {
@@ -422,7 +442,7 @@ input:-webkit-autofill {
 /* 1035px wide and down */
 
 @media screen and (max-width: 1035px) {
-    .score-area, .questions-area, .rules-area, .start-area, .error-area {
+    .score-area, .questions-area, .rules-area, .start-area, .error-area, .scoreboard-area {
         margin: 0 10px 100px;
     }
 }
