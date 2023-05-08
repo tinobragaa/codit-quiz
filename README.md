@@ -70,7 +70,7 @@
 ### Target Audience
 - New software developers
 - Coding students
-- Programming professional's in general
+- Programming professionals in general
 
 ### User Expectations
 - Smooth and playable quiz
@@ -96,7 +96,7 @@
 
 # Design
 
-The website's quiz is designed in four continuous interfaces to enable the user to have a smooth and intuitive experience. The priorities of the \<codit\> are to give an organized and effortless design throughout the quiz, the ability to test the user's expertise and the possibility of continuously learning through random and different questions each time.
+The website's quiz is designed in four continuous interfaces to enable the user to have a smooth and intuitive experience. The priorities of the \<codit\> are to give an organized and effortless design throughout the quiz, the ability to test the user's expertise and the possibility of ongoing learning through random and different questions each time.
 
 The concept behind this project is a minimalist, futuristic and tech kind of vibe. This is reflected in the logo font that resembles coding-fonts design, in the straightforward colour palette (black, white and JS yellow) and consistent design through the interfaces, buttons and the error page, aiming for a positive user experience.
 
@@ -529,21 +529,27 @@ The following devices were used to ensure the site was responsive:
 # Bugs
 
 Bug: When I wrote the function "getUserName" I couldn't make it work. What I wanted it to do was to take the asked user name in the first interface and use it on the second interface. The problem was that it wasn't showing the value inside the ${}, when the function loaded the inner text was displayed but not the content inside the curly braces.
+<br>
 Fix: The solution was the type of event used in the first place. In the HTML file, I was using onclick event which was preventing the function to work like needed. The appropriate event is the onblur: it triggers the function once the field loses focus (i.e. the user navigates away from the field).
 
 Bug: Change the background colour of the input type text when auto-filling from the browser.
+<br>
 Fix: I was able to achieve that using the "-WebKit-autofill" so whenever the user fills the input field with the browser auto-filling it doesn't change its colour.
 
 Bug: When I tried the quiz on my phone the hover effects were sticky to the buttons. The background colour that was set through the hover effect wouldn't disappear on the touchscreen capabilities.
+<br>
 Fix: Added media queries to disable the hover effect on touchscreen devices.
 
 Bug: When I tried the quiz on my phone the text inside the buttons inherit the default colour. I was expecting it to be black but it was coming along blue.
+<br>
 Fix: On the CSS part I defined the colour to prevent inheriting it from the default. 
 
 Bug: I didn't want the label element appearing on the site. However, the wave validation keeps tracking it as an error.
+<br>
 Fix: Reading through the wave website, the appropriate way to do it is using a class .visuallyhidden.
 
 Bug: The "required" attribute wasn't working on the user's name input in the welcome interface. 
+<br>
 Fix: This attribute only works inside form elements. I was able to achieve the same result with JavaScript functions (prevent the user to proceed without filling in the input).
 
 # Deployment
