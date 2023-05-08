@@ -57,7 +57,7 @@ function getUserName() {
     return;
   } else {
     errorMessage.style.display = "none";
-  }
+  };
 
   rulesText.innerText = `So, ${userName}, the rules are pretty simple. 
   This test contains 10 questions and you'll have to select one option among the four options provided.
@@ -67,7 +67,7 @@ function getUserName() {
 
   submitButton.disabled = false;
   errorMessage.style.display = "none";
-}
+};
 
 // Submit button to load rules interface
 submitButton.addEventListener("click", () => {
@@ -87,8 +87,8 @@ function setButtonState() {
         submitButton.disabled = true;
     } else {
         submitButton.disabled = false;
-    }
-}
+    };
+};
 
 // Rules Interface
 
@@ -96,7 +96,7 @@ function setButtonState() {
 startQuiz.addEventListener("click", () => {
   rulesArea.classList.add("hide");
   questionsArea.classList.remove("hide");
-  startTimer()
+  startTimer();
 });
 
 // Questions Interface
@@ -138,8 +138,8 @@ getNewQuestion = () => {
   answerButton3.classList.remove("red-background");
   answerButton4.classList.remove("red-background");
   if (questionsSet === 0 || questionCounter >= totalQuestions) {
-    return showScore()
-  }
+    return showScore();
+  };
 
   questionCounter++;
   counterDisplay.innerText = `${questionCounter}/${totalQuestions}`;
@@ -180,14 +180,14 @@ choices.forEach(choice => {
 
   if (addClass === "correct") {
     incrementScore(correctAnswer);
-  }
+  };
 
   selectedChoice.classList.add(addClass);
   
   setTimeout(() => {
     selectedChoice.classList.remove(addClass);
     getNewQuestion();
-  }, 1200);
+  }, 120);
   });
 });
 
@@ -212,7 +212,7 @@ function startTimer() {
       countdown();
       timerElement.innerText = timeLeft;
   }, 1000);
-}
+};
 
 // Counts down from 30 seconds on each question
 // Prevents user from clicking answer buttons once timer reaches 0, and boldens nextButton
@@ -236,20 +236,20 @@ function countdown() {
       }, 2800);
   } else {
       timeLeft--;
-  }
-}
+  };
+};
 
 choices.disabled = true;
 
 //  Stops timer
 function stopTimer() {
   clearInterval(timer);
-}
+};
 
 function showScore() {
   questionsArea.classList.add("hide");
   scoreArea.classList.remove("hide");
-}
+};
 
 // Score Interface
 
@@ -280,7 +280,6 @@ saveButton.addEventListener("click", () => {
   });
 });
 
-
 // Scoreboard Interface
 
 // Play again button to restart the quiz
@@ -295,4 +294,4 @@ function restartQuiz() {
   stopTimer();
   runQuiz();
   stopTimer();
-}
+};

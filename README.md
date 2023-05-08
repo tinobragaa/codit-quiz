@@ -376,6 +376,24 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 
 </details>
 
+### Quiz - Scoreboard Interface
+- Show the last 5 scores alongside the user's name.
+- Button to restart the game.
+<details>
+<summary>Scoreboard Interface</summary>
+<br>
+
+![Scoreboard Interface](docs/scoreboard-interface.jpg)
+
+</details>
+<details>
+<summary>Play Again Button Hover Effect</summary>
+<br>
+
+![Play Again Button Hover Effect](docs/play-again-button.jpg)
+
+</details>
+
 ### 404 Error Page
 - Maintain default design: logo, big title, container style, button style and footer. Concise design.
 - Back to quiz button hover effect.
