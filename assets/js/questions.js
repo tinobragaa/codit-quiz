@@ -131,14 +131,6 @@ const questions = [
         correct: 4
     },
     {
-        question: "How to find the index of a particular string?",
-        answer1: "indexOf()",
-        answer2: "position()",
-        answer3: "index()",
-        answer4: "getElementByIndex()",
-        correct: 1
-    },
-    {
         question: "How do you focus a particular part of the HTML page in JavaScript?",
         answer1: "on()",
         answer2: "hover()",

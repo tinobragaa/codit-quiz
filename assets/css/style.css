@@ -197,6 +197,8 @@ input:-webkit-autofill {
     padding-top: 80px;
     display: flex;
     justify-content: center;
+    position: relative;
+    left: 50px;
 }
 
 .section-counter {
@@ -429,6 +431,10 @@ input:-webkit-autofill {
         margin: 5px;
     }
 
+    .buttons-container button {
+        font-size: 1.1rem;
+    }
+
     .section-text {
         font-size: 1.2rem;
         margin: 5px;
@@ -452,29 +458,33 @@ input:-webkit-autofill {
 
 @media screen and (max-width: 557px) {
     .buttons-container button {
-        font-size: 2vw;
+        font-size: 1rem;
+        width: 160px;
+        margin: 5px;
     }
 
     .section-counter {
         position: relative;
-        margin: 0 auto;
-    }
-
-    .section-counter h3:first-child {
-        margin-top: 20px;
-        padding-top: 14px;
+        margin: 10px auto 0;
     }
 
     .section-question {
-        padding-top: 40px;
+        padding-top: 10px;
+        left: 0;
+    }
+
+    .section-text {
+        letter-spacing: 0;
     }
 
     .section-text p {
-        padding-top: 40px;
+        padding-top: 30px;
     }
 
-    #question {
-        font-size: 1rem;
+    .info-box {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
     input {
@@ -506,17 +516,58 @@ input:-webkit-autofill {
 /* 365px wide and down */
 
 @media screen and (max-width: 365px) {
+    .section-header {
+        padding-top: 100px;
+    }
+
+    .buttons-container button {
+        width: 90%;
+    }
+
     .section-text p {
         padding-top: 0;
     }
 
+    #alignment-header-rules h2 {
+        margin-top: 10px;
+    }
+
+    .submit-btn {
+        padding-top: 15px;
+    }
+
+    .section-question {
+        letter-spacing: 0;
+        padding-top: 20px;
+    }
+
+    #alignment-header-rules h2 {
+        margin-bottom: 15px;
+    }
+
     #score-text {
         font-size: 2rem;
-        margin: 20px 4px 0;
+        margin-top: 80px;
+    }
+
+    .submit-btn {
+        padding-top: 10px;
+    }
+
+    input {
+        margin-top: 18px;
+    }
+
+    .section-timer {
+        margin-top: 5px;
     }
 
     .score-main-text p {
         padding-top: 20px;
+    }
+
+    .section-counter {
+        margin: 10px auto 10px;
     }
 }
 
