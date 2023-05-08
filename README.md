@@ -12,7 +12,7 @@
 
 - [\<codit\> Quiz](#--codit---quiz)
 - [Table of Contents](#table-of-contents)
-- [User Experience (UX)](#user-experience-ux)
+- [User Experience (UX)](#user-experience--ux-)
   * [Business Goals](#business-goals)
     + [User Goals](#user-goals)
     + [Website Owner Goals](#website-owner-goals)
@@ -20,7 +20,7 @@
     + [User Expectations](#user-expectations)
   * [User Stories](#user-stories)
     + [First-Time User](#first-time-user)
-    + [Returning Userå](#returning-user-)
+    + [Returning User](#returning-user)
     + [Site Owner](#site-owner)
 - [Design](#design)
   * [Wireframes](#wireframes)
@@ -28,15 +28,20 @@
   * [Colour Palette](#colour-palette)
   * [Structure](#structure)
 - [Features](#features)
-    + [Quiz - Start Interface](#quiz---start-interface)
+    + [Main Page](#main-page)
+    + [Quiz - Welcome Interface](#quiz---welcome-interface)
     + [Quiz - Rules Interface](#quiz---rules-interface)
     + [Quiz - Game Interface](#quiz---game-interface)
     + [Quiz - Score Interface](#quiz---score-interface)
+    + [Quiz - Scoreboard Interface](#quiz---scoreboard-interface)
     + [404 Error Page](#404-error-page)
 - [Technologies Used](#technologies-used)
     + [Languages](#languages)
-    + [Frameworks and Tools](#frameworks-and-tools)
-- [Testing](#testing)
+    + [Tools and Resources](#tools-and-resources)
+- [Testing Cases](#testing-cases)
+    + [User Stories](#user-stories-1)
+    + [Features and Validation](#features-and-validation)
+- [Validation](#validation)
     + [HTML Validation](#html-validation)
     + [CSS Validation](#css-validation)
     + [JS Validation](#js-validation)
@@ -84,7 +89,7 @@
 2. As a first-time user, I want to see if my answer is correct or incorrect
 3. As a first-time user, I want to be able to restart the quiz
 
-### Returning Userå
+### Returning User
 1. As a returning user, I want to different questions
 2. As a returning user, I want to improve my knowledge of JS
 3. As a returning user, I want to have fun in a well designed game
@@ -440,7 +445,93 @@ The following resources and tools were used to develop the website:
 - GitHub Wiki TOC generator
 - W3C Markup Validation Service
 
-# Testing
+# Testing Cases
+
+### User Stories
+
+| User Story                                                                            | Feature                                                                                                                    | **Achieved** |
+|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------|
+| As a first-time user, I want to understand the rules.                                 | Rules are explained intuitively throughout the quiz.                                                                       | Yes.         |
+| As a first-time user, I want to see if my answer is correct or incorrect.             | Positive/Negative feedback from selecting correct/wrong options and not selecting any.                                     | Yes.         |
+| As a first-time user, I want to be able to restart the quiz.                          | In the end, you are able to start the quiz and answer more and different questions.                                        | Yes.         |
+| As a returning user, I want to different questions.                                   | The quiz has 65 questions that are randomized for a unique experience.                                                     | Yes.         |
+| As a returning user, I want to improve my knowledge of JS.                            | There are a great number of questions in different aspects of JavaScript and at different levels.                          | Yes.         |
+| As a returning user, I want to have fun in a well designed game.                      | The site design is concise and has a minimalist feel in the way is displayed. A mix of tons of black, white and JS yellow. | Yes.         |
+| As a site owner, I want users to easily understand my project.                        | Rules are explained intuitively throughout the quiz.                                                                       | Yes.         |
+| As a site owner, I want users to enjoy and learn at the same time.                    | There are a great number of questions in different aspects of JavaScript and at different levels.                          | Yes.         |
+| As a site owner, I want ways to have an easy and good experience throughout the quiz. | The site design is concise and has a minimalist feel in the way is displayed. A mix of tons of black, white and JS yellow. | Yes.         |
+
+### Features and Validation
+
+ Thorough testing of this quiz has been undertaken to ensure that all of the buttons and functionality of the quiz work exactly as they have been intended to.
+ - Main Page
+
+| **Feature**                      | **Expectation**                                                             | **Action**                       | **Result**                                                                  |
+|----------------------------------|-----------------------------------------------------------------------------|----------------------------------|-----------------------------------------------------------------------------|
+| Logo home link.                  | When clicked, the user is taken to the Home page.                           | Click the logo.                  | When clicked, the user is taken to the Home page.                           |
+| Logo hover effect.               | When hovered, a shadow appears under the logo to indicate a link.           | Hobered the mouse over the logo.     | When hovered, a shadow appears under the logo to indicate a link.           |
+| Sticky footer.                   | The footer bar is glued to the bottom of the window at every screen height. | Different device's width/height. | The footer bar is glued to the bottom of the window at every screen height. |
+| Social media links.              | When clicked, the user is taken to the LinkedIn or GitHub site.             | Click the icons.                 | When clicked, the user is taken to the LinkedIn or GitHub site.             |
+| Social media links hover effect. | When hovered, a shadow appears under the icons to indicate a link.          | Hovered the mouse over the icons.    | When hovered, a shadow appears under the icons to indicate a link.          |
+
+ - Welcome Interface
+
+| **Feature**                 | **Expectation**                                                      | **Action**                                 | **Result**                                                           |
+|-----------------------------|----------------------------------------------------------------------|--------------------------------------------|----------------------------------------------------------------------|
+| JS hover effect.            | When hovered, the "JavaScript" word color changes to yellow.         | Hovered the mouse over the word.                            | When hovered, the "JavaScript" word color changes to yellow.         |
+| Input hover effect.         | When hovered, the input border color change to indicate a link.      | Hovered the mouse over input.              | When hovered, the input border color change to indicate a link.      |
+| Input validation.           | Invalid input: empty, white spaces, numbers, > 3 or < 10.            | Hovered the mouse over the answer buttons. | Invalid input: empty, white spaces, numbers, > 3 or < 10.            |
+| Submit button.              | When clicked, loads the next interface ( rules interface).           | Click the button.                            | When clicked, loads the next interface ( rules interface).           |
+| Submit button hover effect. | When hovered, the button background color change to indicate a link. | Hovered the mouse over the answer button.  | When hovered, the button background color change to indicate a link. |
+
+ - Rules Interface
+
+| **Feature**                     | **Expectation**                                                                                | **Action**                    | **Result**                                                                                     |
+|---------------------------------|------------------------------------------------------------------------------------------------|-------------------------------|------------------------------------------------------------------------------------------------|
+| User name reuse.                | After the user name was taken from the welcome interface, use it again on the rules interface. | N/A                           | After the user name was taken from the welcome interface, use it again on the rules interface. |
+| Start quiz button.              | When hovered, the input border color change to indicate a link.                                | Click the button.                       | When hovered, the input border color change to indicate a link.                                |
+| Start quiz button hover effect. | When hovered, the button background color change to indicate a link.                           | Hovered the mouse over input. | When hovered, the button background color change to indicate a link.                           |
+
+ - Quiz Interface
+
+| **Feature**              | **Expectation**                                                                                                                                                                            | **Action**                                 | **Result**                                                                                                                                                                                 |
+|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Answer buttons.          | All answer buttons have a hover effect during the 30s of the timer. When the timer reaches 0, the hover effect and ability to click the buttons are disabled.                              | Hovered the mouse over the answer buttons. | All answer buttons have a hover effect during the 30s of the timer. When the timer reaches 0, the hover effect and ability to click the buttons are disabled.                              |
+| Correct answer.          | When clicking on the correct answer, the button background color change to green to indicate the correct answer.                                                                           | Click the correct answer button.                     | When clicking on the correct answer, the button background color change to green to indicate the correct answer.                                                                           |
+| Wrong answer.            | When clicking on the wrong answer, the button background color change to red to indicate the wrong answer.                                                                                 | Click the wrong answer button.                     | When clicking on the wrong answer, the button background color change to red to indicate the wrong answer.                                                                                 |
+| No answer.               | When there is no answer and the time's over, all button's background color turn to red.                                                                                                    | N/A                                        | When there is no answer and the time's over, all button's background color turn to red.                                                                                                    |
+| Score box.               | The score counter starts at 0. If the user gets the question correct, the score increases by 10 + and the timer stops.                                                                     | Click the correct answer button.            | The score counter starts at 0. If the user gets the question correct, the score increases by 10 + and the timer stops.                                                                     |
+| Question counter.        | The question counter will show 1/10. This increments each time a new question is displayed. After the question counter reaches 10/10, the quiz ends.                                       | Quiz played until the end.                 | The question counter will show 1/10. This increments each time a new question is displayed. After the question counter reaches 10/10, the quiz ends.                                       |
+| Timer box.               | The timer is set to 30s and begins counting down immediately. When it reaches 0, the answer buttons and hover effect are disabled and the button's background color turns to red.          | N/A                                        | The timer is set to 30s and begins counting down immediately. When it reaches 0, the answer buttons and hover effect are disabled and the button's background color turns to red.          |
+| Next question countdown. | When there is an answer or the time reaches 0 and there is no answer, there's a timeout of 1.2s and the next question is displayed. If it's the last question, it loads the next interface | N/A                                        | When there is an answer or the time reaches 0 and there is no answer, there's a timeout of 1.2s and the next question is displayed. If it's the last question, it loads the next interface |
+
+ - Score Interface
+
+| **Feature**                      | **Expectation**                                                                                                                          | **Action**                         | **Result**                                                                                                                               |
+|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| User name reuse.                 | After the user name was taken from the welcome interface, use it again on the score interface.                                           | N/A                                | After the user name was taken from the welcome interface, use it again on the score interface.                                           |
+| Score display.                   | The score show on the score interface.                                                                                                   | N/A                                | The score show on the score interface.                                                                                                   |
+| Start again button.              | When clicked, the quiz restarts.                                                                                                         | Click the button.                  | When clicked, the quiz restarts.                                                                                                         |
+| Start again button hover effect. | When hovered, the button background color change to indicate a link.                                                                     | Hovered the mouse over the button. | When hovered, the button background color change to indicate a link.                                                                     |
+| Save score button.               | When clicked, the score is saved with the user name, it is displayed at the scoreboard interface and the scoreboard interface is loaded. | Click the button.                  | When clicked, the score is saved with the user name, it is displayed at the scoreboard interface and the scoreboard interface is loaded. |
+| Save score button hover effect.  | When hovered, the button background color change to indicate a link.                                                                     | Hovered the mouse over the button. | When hovered, the button background color change to indicate a link.                                                                     |
+
+ - Scoreboard Interface
+
+| **Feature**                     | **Expectation**                                                                                      | **Action**                         | **Result**                                                                                           |
+|---------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------|------------------------------------------------------------------------------------------------------|
+| Scoreboard displayed.           | After you save your score and name, the scoreboard is displayed showing the last 5 scores and names. | N/A                                | After you save your score and name, the scoreboard is displayed showing the last 5 scores and names. |
+| Play again button.              | When clicked, the quiz restarts.                                                                     | Click the button.                  | When clicked, the quiz restarts.                                                                     |
+| Play again button hover effect. | When hovered, the button background color change to indicate a link.                                 | Hovered the mouse over the button. | When hovered, the button background color change to indicate a link.                                 |
+
+ - 404 Error Page
+
+| **Feature**               | **Expectation**                                                      | **Action**                         | **Result**                                                           |
+|---------------------------|----------------------------------------------------------------------|------------------------------------|----------------------------------------------------------------------|
+| Quiz button.              | When clicked, it takes back to the quiz.                             | Click the button.                  | When clicked, it takes back to the quiz.                             |
+| Quiz button hover effect. | When hovered, the button background color change to indicate a link. | Hovered the mouse over the button. | When hovered, the button background color change to indicate a link. |
+
+# Validation
 
 ### HTML Validation
 
