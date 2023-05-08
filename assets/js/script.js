@@ -262,4 +262,37 @@ restartButton.addEventListener("click", () => {
 saveButton.addEventListener("click", () => {
   scoreArea.classList.add("hide");
   scoreboardArea.classList.remove("hide");
+
+  const userScore = {
+    name: userName,
+    score: score,
+    date: new Date().toLocaleDateString(),
+  };
+
+  scoreboardList.push(userScore);
+
+  localStorage.setItem("scoreboardList", JSON.stringify(scoreboardList));
+
+  const lastFiveScores = scoreboardList.slice(-5); // Get the last 5 scores
+
+  scoreboardDisplay.innerHTML = lastFiveScores.map(score => {
+    return `<li class="high-score">${score.name} - ${score.score}</li>`;
+  });
 });
+
+
+// Scoreboard Interface
+
+// Play again button to restart the quiz
+playButton.addEventListener("click", () => {
+  restartQuiz();
+});
+
+// This function starts the quiz again
+function restartQuiz() {
+  scoreboardArea.classList.add("hide");
+  startArea.classList.remove("hide");
+  stopTimer();
+  runQuiz();
+  stopTimer();
+}
