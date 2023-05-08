@@ -2,7 +2,7 @@
 (Developer: Valentino Braga)
 
 
-\<codit\> Your JavaScript Quiz, is a simple quiz designed for newbies in software development. The game has 10 questions for each new entry and by the end, you can see how many questions you got right. This project's goal is to help new developers not only to test their knowledge but also to learn more about JS in a fun and interactive way.
+\<codit\> Your JavaScript Quiz is a simple quiz designed for newbies in software development. The game has 10 questions for each new entry and by the end, you can see how many questions you got right. This project's goal is to help new developers not only to test their knowledge but also to learn more about JS in a fun and interactive way.
 
 ![Mockup image](docs/codit-mockup.jpg)
 
@@ -96,9 +96,9 @@
 
 # Design
 
-The website's quiz is designed in four continuous interfaces to enable the user to have a smooth and intuitive experience. The priorities of the \<codit\> are to give an organized and effortless design throughout the quiz, the ability to test the user's expertise and the possibility of continuously learn through random and different questions each time.
+The website's quiz is designed in four continuous interfaces to enable the user to have a smooth and intuitive experience. The priorities of the \<codit\> are to give an organized and effortless design throughout the quiz, the ability to test the user's expertise and the possibility of continuously learning through random and different questions each time.
 
-The concept behind this project is a minimalist, futuristic and tech kind of vibe. Which is reflected in the logo font that resembles coding-fonts design, in the straightforward colour palette (black, white and JS yellow) and consistent design through the interfaces, buttons and the error page, aiming a positive user experience.
+The concept behind this project is a minimalist, futuristic and tech kind of vibe. This is reflected in the logo font that resembles coding-fonts design, in the straightforward colour palette (black, white and JS yellow) and consistent design through the interfaces, buttons and the error page, aiming for a positive user experience.
 
 ## Wireframes
 
@@ -146,7 +146,7 @@ The initial concept of the design can be seen here and they were made through th
 
 ## Typography
 
-Overpass Mono and Press Start 2P fonts were chosen from Google Fonts. Fonts were selected to represent clear, minimalist and "coding" feel they inspire in the user.
+Overpass Mono and Press Start 2P fonts were chosen from Google Fonts. Fonts were selected to represent the clear, minimalist and "coding" feel they inspire in the user.
 
 ![Overpass Mono](docs/overpass-mono-font.jpg)
 
@@ -154,15 +154,15 @@ Overpass Mono and Press Start 2P fonts were chosen from Google Fonts. Fonts were
 
 ## Colour Palette
 
-The colour chosen were: white (#ffffff), JS yellow (#F9DD3C) and github grey-black (#1E1E1E). The colours were tested on Webaim using their contrast checker and the ratio was higher than 12.25:1 meaning that they are a great fit. 
+The colour chosen was: white (#ffffff), JS yellow (#F9DD3C) and GitHub grey-black (#1E1E1E). The colours were tested on Webaim using their contrast checker and the ratio was higher than 12.25:1 meaning that they are a great fit. 
 
-The yellow color is inspired in the JavaScript main color logo and the grey-black is inspired in the background color of the github dark mode.
+The yellow colour is inspired by the JavaScript main colour logo and the grey-black is inspired by the background colour of the GitHub dark mode.
 
 ![Colour Palette](docs/colour-pallete.jpg)
 
 ## Structure 
 
-To keep the user interface as easy and smooth as possible I choose 4 game areas continously played and the 404 Error Page. 
+To keep the user interface as easy and smooth as possible I choose 4 game areas that are continuously played and the 404 Error Page. 
 
 - Start Area: The first interface is the start area where the user is greeted and asked about their name.
 - Rules Area: The second interface showcase the quiz rules and call the user by their name.
@@ -259,7 +259,7 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 </details>
 
 ### Quiz - Rules Interface
-- Maintain default design: logo, big title, container style, button style and footer. Concisive design.
+- Maintain default design: logo, big title, container style, button style and footer. Concise design.
 - User's name reuse.
 - Start Quiz button hover effect.
 <details>
@@ -285,13 +285,13 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 </details>
 
 ### Quiz - Game Interface
-- Maintain default design: logo, big title, container style and footer. Concisive design.
+- Maintain default design: logo, big title, container style and footer. Concise design.
 - Score box to keep track of the right answer.
-- 30 seconds timer to each question.
-- Question counter to know in which question the user is currently on.
+- 30 seconds timer for each question.
+- Question counter to know which question the user is currently on.
 - Green response for correct answers.
 - Red response for incorrect answers.
-- If the time is over and there is no option selected, all answer options turns to red and the buttons are disabled. 
+- If the time is over and there is no option selected, all answer options turn to red and the buttons are disabled. 
 <details>
 <summary>Game Interface</summary>
 <br>
@@ -343,9 +343,9 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 </details>
 
 ### Quiz - Score Interface
-- Maintain default design: logo, big title, container style, button style and footer. Concisive design.
-- Showcase user's name.
-- Showcase user's final score.
+- Maintain default design: logo, big title, container style, button style and footer. Concise design.
+- Showcase the user's name.
+- Showcase the user's final score.
 - Restart button hover effect.
 <details>
 <summary>Score Interface</summary>
@@ -377,7 +377,7 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 </details>
 
 ### 404 Error Page
-- Maintain default design: logo, big title, container style, button style and footer. Concisive design.
+- Maintain default design: logo, big title, container style, button style and footer. Concise design.
 - Back to quiz button hover effect.
 <details>
 <summary>404 Error Page</summary>
@@ -402,16 +402,20 @@ The following languages were used to develop the website:
 - CSS
 - JavaScript
 
-### Frameworks and Tools
-The following frameworks and tools were used to develop the website:
+### Tools and Resources
+The following resources and tools were used to develop the website:
 - Git
 - Github
 - Gitpod
 - Favicon
-- Devtool
+- DevTools
 - Balsamiq
+- W3 Schools
+- Codecademy
 - Google Fonts
 - Font Awesome
+- Stack Overflow
+- Tables Generator
 - JSHint Validation
 - Adobe Photoshop 2023
 - Techsini Mockup Generator
@@ -444,7 +448,13 @@ The Nu HTML Checker (W3C) is used to validate HTML documents. The files passed w
 
 The W3C Jigsaw CSS Validation Service is used to validate CSS documents. The file passed without any errors.
 
+<details>
+<summary>CSS Validation</summary>
+<br>
+
 ![CSS Validation](docs/css-validation.jpg)
+
+</details>
 
 ### JS Validation
 
@@ -518,25 +528,23 @@ The following devices were used to ensure the site was responsive:
 
 # Bugs
 
-Bug: When I wrote the function "getUserName" I couldn't make it work. What I wanted it to do was to take the asked user name in the first interface and use on the second interface. The problem was that it wasn't showing the value inside the ${}, when the function loaded the innet text was displayed but not the content inside the curly braces.
-
-Fix: The solution was the type of event used in the first place. In the HTML file I was using onclick event which was preventing the function to work like needed. The appropriate event is the onblur: it triggers the function once the field loses focus (i.e. the user navigates away from the field).
+Bug: When I wrote the function "getUserName" I couldn't make it work. What I wanted it to do was to take the asked user name in the first interface and use it on the second interface. The problem was that it wasn't showing the value inside the ${}, when the function loaded the inner text was displayed but not the content inside the curly braces.
+Fix: The solution was the type of event used in the first place. In the HTML file, I was using onclick event which was preventing the function to work like needed. The appropriate event is the onblur: it triggers the function once the field loses focus (i.e. the user navigates away from the field).
 
 Bug: Change the background colour of the input type text when auto-filling from the browser.
+Fix: I was able to achieve that using the "-WebKit-autofill" so whenever the user fills the input field with the browser auto-filling it doesn't change its colour.
 
-Fix: I was able to achieve that using the "-webkit-autofill" so whenever the user fills the input field with the browser auto-filling it doesn't change its colour.
+Bug: When I tried the quiz on my phone the hover effects were sticky to the buttons. The background colour that was set through the hover effect wouldn't disappear on the touchscreen capabilities.
+Fix: Added media queries to disable the hover effect on touchscreen devices.
 
-Bug: When I tried the quiz on my phone the hover effects were sticky to the buttons. The background colour that was set through the hover effect wouldn't disappear on the touch screen capabilities.
-
-Fix: Added a media querie to disable the hover effect on touch screen devices.
-
-Bug: When I tried the quiz on my phone the text inside the buttons inherit the default colour. I was ecpeting it to be black but it was coming along blue.
-
-Fix: On the CSS part I defined the volor to prevent inherit it from the deafult. 
+Bug: When I tried the quiz on my phone the text inside the buttons inherit the default colour. I was expecting it to be black but it was coming along blue.
+Fix: On the CSS part I defined the colour to prevent inheriting it from the default. 
 
 Bug: I didn't want the label element appearing on the site. However, the wave validation keeps tracking it as an error.
-
 Fix: Reading through the wave website, the appropriate way to do it is using a class .visuallyhidden.
+
+Bug: The "required" attribute wasn't working on the user's name input in the welcome interface. 
+Fix: This attribute only works inside form elements. I was able to achieve the same result with JavaScript functions (prevent the user to proceed without filling in the input).
 
 # Deployment
 
@@ -576,13 +584,17 @@ A list of references and tutorials used for the site:
 * [Codepen](https://codepen.io/trending)
 * [Quiz Questions](https://codescracker.com/index.htm)
 * [Hiding Label Element](https://www.w3.org/WAI/tutorials/forms/labels/)
+* [Input Required](https://www.w3schools.com/tags/att_input_required.asp)
 * [Get Input's Value](https://www.tabnine.com/academy/javascript/get-value-of-input/)
 * [Enable/Disable Button Tutorial](https://stackdiary.com/enable-disable-button-javascript/)
+* [JavaScrip Timer](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz)
 * [Quiz Tutorial](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
 * [Hover Effect Mobile Devices](http://www.javascriptkit.com/dhtmltutors/sticky-hover-issue-solutions.shtml)
+* [Quiz Tutorial](https://www.codeexplained.dev/2018/10/create-multiple-choice-quiz-using-javascript.html?m=1)
+* [Timer Countdown](https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown/31106229#31106229)
 * [Behance/Cobyte](https://www.behance.net/gallery/129975245/Cobyte-brand-identity?tracking_source=search_projects%7Ccoding+design)
 * [Browser Input Text Autofill](https://stackoverflow.com/questions/29580704/change-input-background-to-transparent-on-autocomplete-form)
-- Love Maths Project
+* Love Maths Project
 
 # Acknowledgements
 
