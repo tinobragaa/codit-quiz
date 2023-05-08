@@ -111,6 +111,7 @@ startQuiz.addEventListener("click", () => {
 runQuiz = () => {
   questionCounter = 0;
   score = 0;
+  scoreDisplay.innerText = score;
   questionsSet = [ ... questions];
   getNewQuestion();
   stopTimer();
@@ -187,7 +188,7 @@ choices.forEach(choice => {
   setTimeout(() => {
     selectedChoice.classList.remove(addClass);
     getNewQuestion();
-  }, 120);
+  }, 1200);
   });
 });
 

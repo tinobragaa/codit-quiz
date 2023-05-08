@@ -369,10 +369,10 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 
 </details>
 <details>
-<summary>Restart Button Hover Effect</summary>
+<summary>Start-Again/Save-Score Buttons Hover Effect</summary>
 <br>
 
-![Restart Button Hover Effect](docs/restart-button.jpg)
+![Start-Again/Save-Score Buttons Hover Effect](docs/restart-button.jpg)
 
 </details>
 
