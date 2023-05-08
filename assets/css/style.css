@@ -52,13 +52,14 @@ body {
     margin: 0 auto;
     border: 3px double #1E1E1E;
     box-shadow: 0 0 5px #1E1E1E;
+    margin-bottom: 100px;
 }
 
 .section-header {
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-align: center;
-    padding-top: 68px;
+    padding-top: 80px;
 }
 
 /* "JavaScript" Heading Hover Effect */
@@ -156,6 +157,7 @@ input:-webkit-autofill {
     margin: 0 auto;
     border: 3px double #1E1E1E;
     box-shadow: 0 0 5px #1E1E1E;
+    margin-bottom: 100px;
 }
 
 #alignment-header-rules h2 {
@@ -171,6 +173,7 @@ input:-webkit-autofill {
     margin: 0 auto;
     border: 3px double #1E1E1E;
     box-shadow: 0 0 5px #1E1E1E;
+    margin-bottom: 100px;
 }
 
 .buttons-container {
@@ -194,7 +197,7 @@ input:-webkit-autofill {
 .section-question {
     font-size: 1.5rem;
     letter-spacing: 2px;
-    padding-top: 80px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -265,6 +268,7 @@ input:-webkit-autofill {
     margin: 0 auto;
     border: 3px double #1E1E1E;
     box-shadow: 0 0 5px #1E1E1E;
+    margin-bottom: 100px;
 }
 
 #score-text {
@@ -504,7 +508,7 @@ input:-webkit-autofill {
 
     #score-text {
         font-size: 2rem;
-        margin: 50px 4px 0;
+        margin: 80px 4px 0;
     }
 
     .score-main-text {
@@ -522,6 +526,10 @@ input:-webkit-autofill {
 
     .buttons-container button {
         width: 90%;
+    }
+
+    .section-text {
+        margin: 14px 5px 0;
     }
 
     .section-text p {
@@ -570,6 +578,33 @@ input:-webkit-autofill {
         margin: 10px auto 10px;
     }
 }
+
+/* 335px wide and down */
+
+@media screen and (max-width: 335px) {
+    .section-question {
+        line-height: 20px;
+        letter-spacing: 0;
+        margin: 12px 2px 0;
+    }
+
+    .section-header {
+        padding-top: 60px;
+    }
+
+    .buttons-container button {
+        font-size: 0.9rem;
+    }
+
+    .section-text {
+        font-size: 1.1rem;
+        margin: 0 2px;
+    }
+
+    .buttons-container {
+        margin-top: 8px;
+    }
+} 
 
 /* Disable hover effect on touch-screen devices */
 

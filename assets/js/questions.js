@@ -286,7 +286,7 @@ const questions = [
         question: "What kind of scoping does JavaScript use?",
         answer1: "Sequential",
         answer2: "Lexical",
-        answer3: "Literal:",
+        answer3: "Literal",
         answer4: "Segmental",
         correct: 2
     },
@@ -387,7 +387,7 @@ const questions = [
         correct: 1
     },
     {
-        question: "In general, event handler is nothing but",
+        question: "In general, event handler is nothing but:",
         answer1: "handler",
         answer2: "event",
         answer3: "interface",
