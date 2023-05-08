@@ -302,7 +302,7 @@ const questions = [
         question: "The keyword or the property that you use to refer to an object through which they were invoked is:",
         answer1: "object",
         answer2: "this",
-        answer3: "to:",
+        answer3: "to",
         answer4: "from",
         correct: 2
     },

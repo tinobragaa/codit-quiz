@@ -22,12 +22,18 @@ const counterDisplay = document.getElementById("questionCounter");
 const scoreDisplay = document.getElementById("score");
 const timerElement = document.getElementById("timer");
 
+const saveButton = document.getElementById("save-btn");
+const scoreboardArea = document.getElementById("scoreboard-area");
+const playButton = document.getElementById("play-again-btn");
+const scoreboardList = JSON.parse(localStorage.getItem("scores")) || [];
+const scoreboardDisplay = document.getElementById("scoreboard-display");
+
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let questionsSet = [];
-let userName = document.getElementById("user-name").value;
+let userName = null
 let timeLeft;
 let timer;
 
@@ -38,7 +44,7 @@ let timer;
  */
 function getUserName() {
   let userNameInput = document.getElementById("user-name");
-  let userName = userNameInput.value.trim();
+  userName = userNameInput.value.trim();
   let rulesText = document.getElementById("rules-text");
   let scoreText = document.getElementById("score-text");
   let errorMessage = document.getElementById("error-message");
@@ -63,7 +69,7 @@ function getUserName() {
   errorMessage.style.display = "none";
 }
 
-// Submit Button to Load Rules Interface
+// Submit button to load rules interface
 submitButton.addEventListener("click", () => {
   startArea.classList.add("hide");
   rulesArea.classList.remove("hide");
@@ -86,7 +92,7 @@ function setButtonState() {
 
 // Rules Interface
 
-// Start Quiz Button to Load Quiz Interface
+// Start quiz button to load quiz interface
 startQuiz.addEventListener("click", () => {
   rulesArea.classList.add("hide");
   questionsArea.classList.remove("hide");
@@ -132,8 +138,7 @@ getNewQuestion = () => {
   answerButton3.classList.remove("red-background");
   answerButton4.classList.remove("red-background");
   if (questionsSet === 0 || questionCounter >= totalQuestions) {
-    questionsArea.classList.add("hide");
-    scoreArea.classList.remove("hide");
+    return showScore()
   }
 
   questionCounter++;
@@ -241,9 +246,20 @@ function stopTimer() {
   clearInterval(timer);
 }
 
+function showScore() {
+  questionsArea.classList.add("hide");
+  scoreArea.classList.remove("hide");
+}
+
 // Score Interface
 
-// Start Again Button to Restart The Quiz
+// Start again button to restart the quiz
 restartButton.addEventListener("click", () => {
   window.location.reload();
+});
+
+// Save score button to load scoreboard interface
+saveButton.addEventListener("click", () => {
+  scoreArea.classList.add("hide");
+  scoreboardArea.classList.remove("hide");
 });
