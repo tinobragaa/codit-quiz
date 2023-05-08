@@ -174,19 +174,59 @@ To keep the user interface as easy and smooth as possible I choose 4 game areas 
 
 The website contains 2 pages: quiz page with 4 interfaces and 404 page. 
 
-### Quiz - Start Interface
-- Logo, Quiz Name.
+### Main Page
+- Logo, home link with hover effect. 
 - Big title defining the purpose of the website.
 - Quiz container.
-- JavaScript hover effect.
-- Input hover effect.
-- Button hover effect.
-- Sticky footer bar with links.
+- Sticky footer bar with social media links and hover effect.
 <details>
-<summary>Quiz - Start Interface</summary>
+<summary>Main Page</summary>
 <br>
 
-![Start Interface](docs/start-interface.jpg)
+![Main Page](docs/start-interface.jpg)
+
+</details>
+<details>
+<summary>Logo Link Hover Effect</summary>
+<br>
+
+![Logo Link Hover Effect](docs/home-link-hover.png)
+
+</details>
+<details>
+<summary>Quiz Container and Title</summary>
+<br>
+
+![Start Interface and Title](docs/container-title.jpg)
+
+</details>
+<details>
+<summary>Sticky Footer - Social Media Links</summary>
+<br>
+
+![Sticky Footer - Social Media Links](docs/sticky-footer.jpg)
+
+</details>
+<details>
+<summary>Social Media Links Hover Effect</summary>
+<br>
+
+![Social Media Links Hover Effect](docs/footer-links-hover.jpg)
+
+</details>
+
+### Quiz - Welcome Interface
+- JavaScript hover effect.
+- Call to action to play the quiz.
+- User's name request.
+- Input hover effect.
+- Button hover effect.
+- Input validation: 3-10 letters and no numbers.
+<details>
+<summary>Welcome Interface</summary>
+<br>
+
+![Welcome Interface](docs/welcome-interface.jpg)
 
 </details>
 <details>
@@ -204,17 +244,17 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 
 </details>
 <details>
+<summary>Input Validation</summary>
+<br>
+
+![Input Validation](docs/input-validation.jpg)
+
+</details>
+<details>
 <summary>Submit Button Hover Effect</summary>
 <br>
 
 ![Submit Button Hover Effect](docs/submit-button-hover.jpg)
-
-</details>
-<details>
-<summary>Sticky Footer - Social Media Links</summary>
-<br>
-
-![Sticky Footer - Social Media Links](docs/sticky-footer.jpg)
 
 </details>
 
@@ -223,7 +263,7 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 - User's name reuse.
 - Start Quiz button hover effect.
 <details>
-<summary>Quiz - Start Interface</summary>
+<summary>Rules Interface</summary>
 <br>
 
 ![Rules Interface](docs/rules-interface.jpg)
@@ -240,21 +280,23 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 <summary>Start Quiz Button Hover Effect</summary>
 <br>
 
-![Start Quiz Button Hover Effect](docs/start-quiz-button.jpg)
+![Start Quiz Button Hover Effect](docs/start-button-hover.jpg)
 
 </details>
 
 ### Quiz - Game Interface
 - Maintain default design: logo, big title, container style and footer. Concisive design.
 - Score box to keep track of the right answer.
+- 30 seconds timer to each question.
 - Question counter to know in which question the user is currently on.
 - Green response for correct answers.
 - Red response for incorrect answers.
+- If the time is over and there is no option selected, all answer options turns to red and the buttons are disabled. 
 <details>
-<summary>Quiz - Game Interface</summary>
+<summary>Game Interface</summary>
 <br>
 
-![Game Interface](docs/quiz-interface.jpg)
+![Game Interface](docs/game-interface.jpg)
 
 </details>
 <details>
@@ -272,6 +314,13 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 
 </details>
 <details>
+<summary>Timer</summary>
+<br>
+
+![Timer](docs/timer-box.jpg)
+
+</details>
+<details>
 <summary>Correct Answer</summary>
 <br>
 
@@ -285,6 +334,13 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 ![Incorrect Answer](docs/wrong-answer-response.jpg)
 
 </details>
+<details>
+<summary>No Answer</summary>
+<br>
+
+![No Answer](docs/no-answer.jpg)
+
+</details>
 
 ### Quiz - Score Interface
 - Maintain default design: logo, big title, container style, button style and footer. Concisive design.
@@ -292,7 +348,7 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 - Showcase user's final score.
 - Restart button hover effect.
 <details>
-<summary>Quiz - Score Interface</summary>
+<summary>Score Interface</summary>
 <br>
 
 ![Score Interface](docs/score-interface.jpg)
