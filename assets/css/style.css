@@ -146,6 +146,7 @@ input:-webkit-autofill {
 /* Submit Button Hover Effect */
 .submit-btn button:hover {
     background-color: #F9DD3C;
+    cursor: pointer;
 }
 
 /* Rules Interface */
@@ -243,6 +244,7 @@ input:-webkit-autofill {
 
 .hover:hover {
     background-color: #F9DD3C;
+    cursor: pointer;
 }
 
 .questions-left {
