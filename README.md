@@ -35,9 +35,10 @@
     + [Quiz - Score Interface](#quiz---score-interface)
     + [Quiz - Scoreboard Interface](#quiz---scoreboard-interface)
     + [404 Error Page](#404-error-page)
+- [Future Features](#future-features)
 - [Technologies Used](#technologies-used)
     + [Languages](#languages)
-    + [Tools and Resources](#tools-and-resources)
+    + [Resources and Tools](#resources-and-tools)
 - [Testing Cases](#testing-cases)
     + [User Stories](#user-stories-1)
     + [Features and Validation](#features-and-validation)
@@ -417,6 +418,18 @@ The website contains 2 pages: quiz page with 4 interfaces and 404 page.
 
 </details>
 
+# Future Features
+
+A few features that could make the website even better are listed here:
+
+1. Implement different difficulty levels for the questions, such as easy, medium, and hard.
+
+2. Add a multiplayer mode where users can compete against each other.
+
+3. Include the option to share quiz results on social media.
+
+4. Connect an API to enable dynamic question updates and enhance versatility.
+
 # Technologies Used
 
 ### Languages
@@ -425,7 +438,7 @@ The following languages were used to develop the website:
 - CSS
 - JavaScript
 
-### Tools and Resources
+### Resources and Tools
 The following resources and tools were used to develop the website:
 - Git
 - Github
@@ -469,7 +482,7 @@ The following resources and tools were used to develop the website:
 | **Feature**                      | **Expectation**                                                             | **Action**                       | **Result**                                                                  |
 |----------------------------------|-----------------------------------------------------------------------------|----------------------------------|-----------------------------------------------------------------------------|
 | Logo home link.                  | When clicked, the user is taken to the Home page.                           | Click the logo.                  | When clicked, the user is taken to the Home page.                           |
-| Logo hover effect.               | When hovered, a shadow appears under the logo to indicate a link.           | Hobered the mouse over the logo.     | When hovered, a shadow appears under the logo to indicate a link.           |
+| Logo hover effect.               | When hovered, a shadow appears under the logo to indicate a link.           | Hovered the mouse over the logo.     | When hovered, a shadow appears under the logo to indicate a link.           |
 | Sticky footer.                   | The footer bar is glued to the bottom of the window at every screen height. | Different device's width/height. | The footer bar is glued to the bottom of the window at every screen height. |
 | Social media links.              | When clicked, the user is taken to the LinkedIn or GitHub site.             | Click the icons.                 | When clicked, the user is taken to the LinkedIn or GitHub site.             |
 | Social media links hover effect. | When hovered, a shadow appears under the icons to indicate a link.          | Hovered the mouse over the icons.    | When hovered, a shadow appears under the icons to indicate a link.          |
@@ -480,7 +493,7 @@ The following resources and tools were used to develop the website:
 |-----------------------------|----------------------------------------------------------------------|--------------------------------------------|----------------------------------------------------------------------|
 | JS hover effect.            | When hovered, the "JavaScript" word color changes to yellow.         | Hovered the mouse over the word.                            | When hovered, the "JavaScript" word color changes to yellow.         |
 | Input hover effect.         | When hovered, the input border color change to indicate a link.      | Hovered the mouse over input.              | When hovered, the input border color change to indicate a link.      |
-| Input validation.           | Invalid input: empty, white spaces, numbers, > 3 or < 10.            | Hovered the mouse over the answer buttons. | Invalid input: empty, white spaces, numbers, > 3 or < 10.            |
+| Input validation.           | Invalid input: empty, white spaces, numbers, > 3 or < 10.            | Invalid input. | Invalid input: empty, white spaces, numbers, > 3 or < 10.            |
 | Submit button.              | When clicked, loads the next interface ( rules interface).           | Click the button.                            | When clicked, loads the next interface ( rules interface).           |
 | Submit button hover effect. | When hovered, the button background color change to indicate a link. | Hovered the mouse over the answer button.  | When hovered, the button background color change to indicate a link. |
 
@@ -489,7 +502,7 @@ The following resources and tools were used to develop the website:
 | **Feature**                     | **Expectation**                                                                                | **Action**                    | **Result**                                                                                     |
 |---------------------------------|------------------------------------------------------------------------------------------------|-------------------------------|------------------------------------------------------------------------------------------------|
 | User name reuse.                | After the user name was taken from the welcome interface, use it again on the rules interface. | N/A                           | After the user name was taken from the welcome interface, use it again on the rules interface. |
-| Start quiz button.              | When hovered, the input border color change to indicate a link.                                | Click the button.                       | When hovered, the input border color change to indicate a link.                                |
+| Start quiz button.              | When clicked, loads the next interface (quiz interface).                                | Click the button.                       | When clicked, loads the next interface (quiz interface).                                |
 | Start quiz button hover effect. | When hovered, the button background color change to indicate a link.                           | Hovered the mouse over input. | When hovered, the button background color change to indicate a link.                           |
 
  - Quiz Interface
@@ -696,7 +709,6 @@ To contribute or check the code yourself, you can fork or clone the repository a
 
 A list of references and tutorials used for the site:
 
-* [Codepen](https://codepen.io/trending)
 * [Quiz Questions](https://codescracker.com/index.htm)
 * [Hiding Label Element](https://www.w3.org/WAI/tutorials/forms/labels/)
 * [Input Required](https://www.w3schools.com/tags/att_input_required.asp)
