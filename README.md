@@ -727,7 +727,6 @@ A list of references and tutorials used for the site:
 
 I would like to take this opportunity to acknowledge and thank the following people:
 
-- My actual manager, Saoirse, for letting me study.
 - A big thank you for everybody on Code Institute's Slack Channels.
 - Jason, tutor from Code Institue. Thank you for the help.
 - My sister, Dana Braga, who's always willing to help.
