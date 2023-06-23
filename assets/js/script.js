@@ -278,7 +278,7 @@ saveButton.addEventListener("click", () => {
 
   scoreboardDisplay.innerHTML = lastFiveScores.map(score => {
     return `<li class="high-score">${score.name} - ${score.score}</li>`;
-  });
+  }).join('');
 });
 
 // Scoreboard Interface
