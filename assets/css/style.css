@@ -59,7 +59,7 @@ body {
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-align: center;
-    padding-top: 80px;
+    margin-top: 80px;
 }
 
 /* "JavaScript" Heading Hover Effect */
@@ -323,6 +323,7 @@ input:-webkit-autofill {
 
 .scoreboard {
     text-align: center;
+    margin-top: 10px;
 }
 
 .scoreboard li {
@@ -454,7 +455,7 @@ input:-webkit-autofill {
 @media screen and (max-width: 776px) {
     .section-header {
         font-size: 1rem;
-        margin: 5px;
+        margin: 24% 5px 5px 5px;
     }
 
     .buttons-container button {

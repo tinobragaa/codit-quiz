@@ -1,8 +1,6 @@
-// Code reference from https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx
-// Code reference from https://stackdiary.com/enable-disable-button-javascript/
-
 // Variables
 const startArea = document.getElementById("start-area");
+const nameInput = document.getElementById("user-name");
 const rulesArea = document.getElementById("rules-area");
 const questionsArea = document.getElementById("questions-area");
 const scoreArea = document.getElementById("score-area");
@@ -21,7 +19,6 @@ const totalQuestions = 10;
 const counterDisplay = document.getElementById("questionCounter");
 const scoreDisplay = document.getElementById("score");
 const timerElement = document.getElementById("timer");
-
 const saveButton = document.getElementById("save-btn");
 const scoreboardArea = document.getElementById("scoreboard-area");
 const playButton = document.getElementById("play-again-btn");
@@ -49,6 +46,8 @@ function getUserName() {
   let scoreText = document.getElementById("score-text");
   let errorMessage = document.getElementById("error-message");
 
+  // Code to enable/disable buttons, credit:
+  // https://stackdiary.com/enable-disable-button-javascript/
   if (userName === "" || userName.length < 3 || userName.length > 10 || /\d/.test(userName)) {
     userNameInput.value = "";
     submitButton.disabled = true;
@@ -90,6 +89,13 @@ function setButtonState() {
     };
 };
 
+/**
+ * This function resets the user name input to default state.
+ */
+function resetInputField() {
+  nameInput.value = ""; // Set the value to an empty string
+}
+
 // Rules Interface
 
 // Start quiz button to load quiz interface
@@ -101,6 +107,8 @@ startQuiz.addEventListener("click", () => {
 
 // Questions Interface
 
+// Code to build main function, credit: 
+// https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx
 /**
  * This function establishes the structure of the quiz.
  * questionCounter counts in which question the users are on. In the beginning, it starts at 0.
@@ -188,7 +196,7 @@ choices.forEach(choice => {
   setTimeout(() => {
     selectedChoice.classList.remove(addClass);
     getNewQuestion();
-  }, 1200);
+  }, 100);
   });
 });
 
@@ -206,8 +214,9 @@ incrementScore = num => {
 
 runQuiz();
 
-// Timer
-// Sets timer to 30 seconds
+/** 
+* This function sets timer to 30 seconds.
+*/
 function startTimer() {
   timer = setInterval(function () {
       countdown();
@@ -215,8 +224,11 @@ function startTimer() {
   }, 1000);
 };
 
-// Counts down from 30 seconds on each question
-// Prevents user from clicking answer buttons once timer reaches 0, and boldens nextButton
+
+/** 
+* This function Counts down from 30 seconds on each question, prevents users 
+* from clicking answer buttons once timer reaches 0 and boldens nextButton.
+*/
 function countdown() {
   if (timeLeft === 0) {
       stopTimer();
@@ -242,11 +254,17 @@ function countdown() {
 
 choices.disabled = true;
 
-//  Stops timer
+/** 
+* This function stops the timer.
+*/
 function stopTimer() {
   clearInterval(timer);
 };
 
+
+/** 
+* This function shows the scoreArea.
+*/
 function showScore() {
   questionsArea.classList.add("hide");
   scoreArea.classList.remove("hide");
@@ -288,11 +306,14 @@ playButton.addEventListener("click", () => {
   restartQuiz();
 });
 
-// This function starts the quiz again
+/** 
+* This function restarts the game.
+*/
 function restartQuiz() {
   scoreboardArea.classList.add("hide");
   startArea.classList.remove("hide");
   stopTimer();
   runQuiz();
   stopTimer();
+  resetInputField();
 };
