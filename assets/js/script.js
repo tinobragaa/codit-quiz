@@ -14,7 +14,6 @@ const answerButton3 = document.getElementById("answer-btn-3");
 const answerButton4 = document.getElementById("answer-btn-4");
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("answers-text"));
-const correctAnswer = 10;
 const totalQuestions = 10;
 const counterDisplay = document.getElementById("questionCounter");
 const scoreDisplay = document.getElementById("score");
@@ -178,27 +177,42 @@ getNewQuestion = () => {
  */
 choices.forEach(choice => {
   choice.addEventListener("click", e => {
-  stopTimer()
-  if (!acceptingAnswers) return;
-  acceptingAnswers = false;
-  const selectedChoice = e.target;
-  const selectedAnswer = selectedChoice.dataset["number"];
-  
-  const addClass =
-  selectedAnswer == currentQuestion.correct ? "correct" : "incorrect";
+    stopTimer();
+    if (!acceptingAnswers) return;
+    acceptingAnswers = false;
+    const selectedChoice = e.target;
+    const selectedAnswer = selectedChoice.dataset["number"];
+    const correctAnswer = currentQuestion.correct;
 
-  if (addClass === "correct") {
-    incrementScore(correctAnswer);
-  };
+    const addClass = selectedAnswer == correctAnswer ? "correct" : "incorrect";
 
-  selectedChoice.classList.add(addClass);
-  
-  setTimeout(() => {
-    selectedChoice.classList.remove(addClass);
-    getNewQuestion();
-  }, 1200);
+    if (addClass === "correct") {
+      choices.forEach(choice => {
+        if (choice.dataset["number"] == correctAnswer) {
+          choice.classList.add("correct");
+        };
+      });
+      incrementScore(10);
+    } else {
+      selectedChoice.classList.add(addClass);
+      choices.forEach(choice => {
+        if (choice.dataset["number"] == correctAnswer) {
+          choice.classList.add("correct");
+        };
+      });
+    }
+
+    setTimeout(() => {
+      selectedChoice.classList.remove(addClass);
+      choices.forEach(choice => {
+        choice.classList.remove("correct");
+        choice.classList.remove("incorrect");
+      });
+      getNewQuestion();
+    }, 1200);
   });
 });
+
 
 
 /** 
